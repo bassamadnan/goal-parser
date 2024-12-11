@@ -81,80 +81,106 @@ from typing import List, Dict
 def get_user_goal() -> str:
     user_prompts = [
         # CONCRETE GOALS (18)
-        # 1. [historical_info, crowd_monitor, ticket_purchase]
+        # 1. Services: [historical_info(site_name: golconda fort), crowd_monitor(location_name: golconda fort), 
+        #              ticket_purchase(ticket_type: monument), travel_options(preferred_mode: [private_transport, auto_rickshaw, cab])]
         "The Golconda Fort sounds fascinating! I'd like to explore it thoroughly. What's the best way to get there?",
         
-        # 2. [historical_info, crowd_monitor]
+        # 2. Services: [historical_info(site_name: charminar), crowd_monitor(location_name: charminar)]
         "I'd love to visit Charminar and understand its history. Wonder if it gets too crowded on weekends?",
         
-        # 3. [historical_info, exhibition_tracker]
+        # 3. Services: [historical_info(site_name: salar jung museum), 
+        #              exhibition_tracker(exhibition_type: [art, historical, cultural]),
+        #              ticket_purchase(ticket_type: museum)]
         "I'm really interested in visiting Salar Jung Museum. Do they have any special exhibitions going on?",
         
-        # 4. [historical_info, crowd_monitor]
+        # 4. Services: [historical_info(site_name: qutub shahi tombs), 
+        #              travel_options(preferred_mode: [auto_rickshaw, cab])]
         "The Qutub Shahi Tombs look beautiful in photos. How can I plan a visit there?",
         
-        # 5. [water_quality, air_quality]
+        # 5. Services: [water_quality(water_body_name: hussain sagar), 
+        #              air_quality(locations: hyderabad)]
         "I'm thinking of spending some time near Hussain Sagar Lake. How clean is the water there?",
         
-        # 6. [water_quality, crowd_monitor]
+        # 6. Services: [water_quality(water_body_name: hussain sagar), 
+        #              crowd_monitor(location_name: tank bund)]
         "Would love to enjoy the sunset at Tank Bund. Is it usually very crowded in the evenings?",
         
-        # 7. [water_quality, air_quality]
+        # 7. Services: [water_quality(water_body_name: durgam cheruvu), 
+        #              air_quality(locations: hitec city)]
         "Would love to visit Durgam Cheruvu for a peaceful evening. Is the area nice for walking?",
         
-        # 8. [crowd_monitor, travel_options]
+        # 8. Services: [crowd_monitor(location_name: laad bazaar), 
+        #              travel_options(preferred_mode: [auto_rickshaw, cab])]
         "I want to explore Laad Bazaar for traditional bangles. What's the best way to reach there?",
         
-        # 9. [crowd_monitor, travel_options]
+        # 9. Services: [crowd_monitor(location_name: gvk one), 
+        #              travel_options(preferred_mode: [metro, cab])]
         "Planning to visit GVK One for some shopping. Is it usually very crowded on weekdays?",
         
-        # 10. [restaurant_finder]
+        # 10. Services: [restaurant_finder(cuisine_type: hyderabadi, dietary_restrictions: vegetarian)]
         "Craving some authentic Hyderabadi biryani! Any vegetarian-friendly places you'd recommend?",
         
-        # 11. [restaurant_finder, crowd_monitor]
+        # 11. Services: [restaurant_finder(cuisine_type: street food, dietary_restrictions: vegetarian), 
+        #               crowd_monitor(location_name: [charminar, laad bazaar])]
         "Would love to try some street food. Any areas famous for chaat and local snacks?",
         
-        # 12. [exhibition_tracker, ticket_purchase]
+        # 12. Services: [exhibition_tracker(exhibition_type: [art, cultural, traditional]), 
+        #               ticket_purchase(ticket_type: museum)]
         "Are there any cultural exhibitions happening in the city? Particularly interested in traditional art.",
         
-        # 13. [exhibition_tracker, ticket_purchase]
+        # 13. Services: [exhibition_tracker(exhibition_type: [handicrafts, traditional]), 
+        #               ticket_purchase(ticket_type: museum)]
         "Would love to see some local handicraft exhibitions. Anything interesting coming up?",
         
-        # 14. [ticket_purchase, crowd_monitor]
+        # 14. Services: [ticket_purchase(ticket_type: theme_park)]
         "Thinking of visiting Snow World. Is it usually very crowded?",
         
-        # 15. [ticket_purchase, travel_options]
+        # 15. Services: [ticket_purchase(ticket_type: ramoji film city), 
+        #               travel_options(preferred_mode: [private_transport, cab])]
         "Planning to visit Ramoji Film City. What's the best way to plan this trip?",
         
-        # 16. [restaurant_finder]
+        # 16. Services: [restaurant_finder(cuisine_type: irani, dietary_restrictions: vegetarian)]
         "Looking for a good place serving traditional Irani chai and Osmania biscuits!",
         
-        # 17. [exhibition_tracker]
+        # 17. Services: [exhibition_tracker(exhibition_type: [photography, art])]
         "Any photography exhibitions or galleries worth visiting this week?",
         
-        # 18. [water_quality, air_quality]
+        # 18. Services: [water_quality(water_body_name: gandipet lake), 
+        #               air_quality(locations: hyderabad)]
         "I've heard Gandipet Lake is beautiful. How's the water quality there these days?",
 
         # AMBIGUOUS GOALS (7)
-        # 19. [historical_info, crowd_monitor, restaurant_finder]
+        # 19. Services: [historical_info(site_name: [charminar, mecca masjid]), 
+        #               crowd_monitor(location_name: [charminar, laad bazaar]),
+        #               restaurant_finder(cuisine_type: [hyderabadi, irani], dietary_restrictions: [vegetarian, non_veg])]
         "My grandparents always talk about Hyderabad's old charm. Want to experience that authentic vibe and maybe try some traditional snacks.",
         
-        # 20. [historical_info, restaurant_finder, crowd_monitor]
+        # 20. Services: [historical_info(site_name: [charminar, golconda fort]), 
+        #               restaurant_finder(cuisine_type: [hyderabadi, mughlai], dietary_restrictions: non_veg)]
         "Been reading about Hyderabad's royal history. Would love to see some of that grandeur and taste what the Nizams enjoyed!",
         
-        # 21. [water_quality, crowd_monitor, restaurant_finder]
+        # 21. Services: [water_quality(water_body_name: hussain sagar), 
+        #               restaurant_finder(cuisine_type: [continental, north indian], dietary_restrictions: [vegetarian, non_veg])]
         "I keep seeing these gorgeous lake photos on Instagram. Would love to spend an evening there and grab dinner nearby!",
         
-        # 22. [crowd_monitor, restaurant_finder, travel_options]
+        # 22. Services: [crowd_monitor(location_name: [laad bazaar, charminar]),
+        #               restaurant_finder(cuisine_type: street food, dietary_restrictions: vegetarian),
+        #               travel_options(preferred_mode: auto_rickshaw)]
         "Love those bustling market vibes, you know? Where locals shop and grab quick bites. That's my scene!",
         
-        # 23. [exhibition_tracker, historical_info, restaurant_finder]
+        # 23. Services: [exhibition_tracker(exhibition_type: [art, cultural]), 
+        #               historical_info(site_name: salar jung museum),
+        #               restaurant_finder(cuisine_type: hyderabadi)]
         "Love anything artsy with a story behind it. Places where I can learn about local culture while enjoying the atmosphere.",
         
-        # 24. [historical_info, restaurant_finder, exhibition_tracker]
+        # 24. Services: [historical_info(site_name: [charminar, golconda fort]), 
+        #               restaurant_finder(cuisine_type: [hyderabadi, street food], dietary_restrictions: [vegetarian, non_veg]),
+        #               exhibition_tracker(exhibition_type: historical)]
         "History nerd but also a foodie. Want to explore places that tell a story while munching on local specialties!",
         
-        # 25. [restaurant_finder, crowd_monitor, travel_options]
+        # 25. Services: [restaurant_finder(cuisine_type: [hyderabadi, street food]), 
+        #               crowd_monitor(location_name: [charminar, laad bazaar]),
+        #               travel_options(preferred_mode: [auto_rickshaw, private_transport])]
         "First time in Hyderabad! Want to start with the locals' favorites, not the tourist checklist."
     ]
     return random.choice(user_prompts)
@@ -238,3 +264,47 @@ def load_service_parameters(file_path: str) -> dict:
 
 
 # print(load_service_parameters("service_params.txt"))
+
+def write_output(results: dict, output_file: str) -> None:
+    """
+    Write simulation results to a file with timing information.
+    
+    Args:
+        results (dict): Dictionary containing simulation results and metadata
+        output_file (str): Path to the output file
+    """
+    with open(output_file, 'w', encoding='utf-8') as f:
+        # Write simulation metadata
+        f.write(f"Simulation Index: {results['simulation_index']}\n")
+        f.write(f"Time taken: {results['simulation_time']:.2f} seconds\n")
+        f.write(f"User Goal: {results.get('user_goal', 'Not specified')}\n")
+        f.write(f"Available Hours: {results.get('available_hours', 'Not specified')}\n")
+        f.write("----------------------------------------\n\n")
+
+        # Write conversation with service tracking
+        f.write("Conversation with Service Tracking:\n")
+        for turn, entry in enumerate(results.get('conversation', []), 1):
+            role = entry.get('role', 'Unknown')
+            content = entry.get('content', 'No content')
+            f.write(f"\n{role}:\n{content}\n")
+
+            # If there are identified services after this turn
+            services = entry.get('identified_services', [])
+            if services:
+                f.write(f"\nIdentified Services after Turn {turn}:\n")
+                f.write(", ".join(services) + "\n")
+
+        # Write final summary if available
+        if 'final_summary' in results:
+            f.write("\nFinal Plan Summary:\n")
+            f.write(results['final_summary'] + "\n")
+
+        # Write service parameters if available
+        if 'service_parameters' in results:
+            f.write("\nCore Services and Parameters:\n")
+            f.write(results['service_parameters'] + "\n")
+
+        # Write any error information if present
+        if 'error' in results:
+            f.write("\nError Information:\n")
+            f.write(results['error'] + "\n")
