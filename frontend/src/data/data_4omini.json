@@ -75,10 +75,33 @@
       ],
       "original_goal": "I keep seeing these gorgeous lake photos on Instagram. Would love to spend an evening there and grab dinner nearby!",
       "goal_category": "ambiguous",
-      "expected_services": [
-        "water_quality",
-        "crowd_monitor",
-        "restaurant_finder"
+      "expected_services_with_params": [
+        {
+          "water_quality": {
+            "water_body_name": [
+              "hussain sagar"
+            ]
+          }
+        },
+        {
+          "crowd_monitor": {
+            "location_name": [
+              "tank bund"
+            ]
+          }
+        },
+        {
+          "restaurant_finder": {
+            "cuisine_type": [
+              "continental",
+              "north indian"
+            ],
+            "dietary_restrictions": [
+              "vegetarian",
+              "non_veg"
+            ]
+          }
+        }
       ],
       "core_services": "restaurant_finder:  \n- cuisine_type: [hyderabadi]  \n- dietary_restrictions: []  \n\ncrowd_monitor:  \n- location_name: [hussain sagar, tank bund]  \n\nwater_quality:  \n- water_body_name: [hussain sagar]",
       "final_summary": "Based on our discussion, your plan includes visiting Hussain Sagar Lake for an evening stroll and enjoying the scenic views, which will take approximately 2 hours from 5:00 PM to 7:00 PM. Following that, you can head to a nearby restaurant for dinner, focusing on Hyderabadi cuisine, which should take around 1.5 hours, allowing you to dine from 7:00 PM to 8:30 PM. This plan keeps you within a total of 3.5 hours, ensuring a relaxed and enjoyable evening.",
@@ -163,10 +186,34 @@
       ],
       "original_goal": "History nerd but also a foodie. Want to explore places that tell a story while munching on local specialties!",
       "goal_category": "ambiguous",
-      "expected_services": [
-        "historical_info",
-        "restaurant_finder",
-        "exhibition_tracker"
+      "expected_services_with_params": [
+        {
+          "historical_info": {
+            "site_name": [
+              "charminar",
+              "golconda fort"
+            ]
+          }
+        },
+        {
+          "restaurant_finder": {
+            "cuisine_type": [
+              "hyderabadi",
+              "street food"
+            ],
+            "dietary_restrictions": [
+              "vegetarian",
+              "non_veg"
+            ]
+          }
+        },
+        {
+          "exhibition_tracker": {
+            "exhibition_type": [
+              "historical"
+            ]
+          }
+        }
       ],
       "core_services": "restaurant_finder:  \n- cuisine_type: [hyderabadi, street food]  \n- dietary_restrictions: [non_veg]  \n\ncrowd_monitor:  \n- location_name: [charminar, golconda fort]  \n\nhistorical_info:  \n- site_name: [charminar, golconda fort]",
       "final_summary": "Based on our discussion, your plan includes a visit to the iconic Charminar from 10:00 AM to 11:00 AM, where you can explore its rich history and stunning architecture. Following that, enjoy some delicious local specialties at a nearby street food stall or restaurant from 11:15 AM to 12:15 PM, savoring the famous Hyderabadi biryani and other local delicacies. \n\nAfter your meal, you will head to the Golconda Fort from 12:30 PM to 1:30 PM to delve into its fascinating history and enjoy breathtaking views of the city. This itinerary allows you to embrace both your love for history and your passion for food within a 4-hour timeframe.",
@@ -251,9 +298,22 @@
       ],
       "original_goal": "I want to explore Laad Bazaar for traditional bangles. What's the best way to reach there?",
       "goal_category": "concrete",
-      "expected_services": [
-        "crowd_monitor",
-        "travel_options"
+      "expected_services_with_params": [
+        {
+          "crowd_monitor": {
+            "location_name": [
+              "laad bazaar"
+            ]
+          }
+        },
+        {
+          "travel_options": {
+            "preferred_mode": [
+              "auto_rickshaw",
+              "cab"
+            ]
+          }
+        }
       ],
       "core_services": "travel_options:  \n- preferred_mode: [cab, auto_rickshaw]  \n\ncrowd_monitor:  \n- location_name: [charminar, laad bazaar]",
       "final_summary": "Based on our discussion, your plan includes exploring Laad Bazaar for traditional bangles. To reach Laad Bazaar, the best mode of transportation is to take a cab or auto-rickshaw, which would take approximately 30 minutes from the Charminar area. \n\nOnce you arrive at Laad Bazaar, you can spend about 1 hour browsing the vibrant shops for beautiful bangles. After shopping, you might want to grab a quick bite at a nearby restaurant serving Hyderabadi cuisine, which should take another 30 minutes. \n\nAltogether, your visit, including transportation, shopping, and dining, would fit well within a 3-hour timeframe. Enjoy your experience at Laad Bazaar!",
@@ -338,9 +398,21 @@
       ],
       "original_goal": "I'm thinking of spending some time near Hussain Sagar Lake. How clean is the water there?",
       "goal_category": "concrete",
-      "expected_services": [
-        "water_quality",
-        "air_quality"
+      "expected_services_with_params": [
+        {
+          "water_quality": {
+            "water_body_name": [
+              "hussain sagar"
+            ]
+          }
+        },
+        {
+          "air_quality": {
+            "locations": [
+              "hyderabad"
+            ]
+          }
+        }
       ],
       "core_services": "water_quality:  \n- water_body_name: [hussain sagar]  \n\ncrowd_monitor:  \n- location_name: [hussain sagar]  \n\nrestaurant_finder:  \n- cuisine_type: [hyderabadi]  \n- dietary_restrictions: [vegetarian]",
       "final_summary": "Based on our discussion, your plan includes spending some time near Hussain Sagar Lake. You inquired about the water quality there, and I will provide you with that information shortly. \n\nTo make the most of your visit within a 4-hour timeframe, I recommend a leisurely walk along the lake promenade to enjoy the scenic beauty. You can allocate about 1 hour for this activity. \n\nFollowing your walk, you might consider visiting a nearby restaurant for lunch, possibly trying some local Hyderabadi cuisine. This can take around 1 hour as well. \n\nFinally, if you're interested, you could spend some time at a nearby attraction, such as the Buddha statue in the middle of the lake, which you can visit by taking a short ferry ride. This can take another hour, giving you an overall plan that fits within your 4-hour window. \n\nLet me check the water quality at Hussain Sagar for you now.",
@@ -425,9 +497,21 @@
       ],
       "original_goal": "Would love to enjoy the sunset at Tank Bund. Is it usually very crowded in the evenings?",
       "goal_category": "concrete",
-      "expected_services": [
-        "water_quality",
-        "crowd_monitor"
+      "expected_services_with_params": [
+        {
+          "water_quality": {
+            "water_body_name": [
+              "hussain sagar"
+            ]
+          }
+        },
+        {
+          "crowd_monitor": {
+            "location_name": [
+              "tank bund"
+            ]
+          }
+        }
       ],
       "core_services": "crowd_monitor:  \n- location_name: [tank bund]  \n\ntravel_options:  \n- preferred_mode: [cab, auto_rickshaw]",
       "final_summary": "Based on our discussion, your plan includes enjoying the sunset at Tank Bund. Since you are concerned about crowd levels in the evenings, I recommend checking the crowd monitor for Tank Bund before you go. The sunset typically occurs around 6:30 PM, so arriving by 5:30 PM would give you ample time to find a good spot and enjoy the view. To get there, you can choose your preferred mode of transportation, such as a cab or auto-rickshaw, for convenience. Overall, your activity at Tank Bund will take about 1.5 to 2 hours, allowing you to relax and soak in the ambiance before heading to your next destination.",
@@ -512,9 +596,22 @@
       ],
       "original_goal": "Would love to see some local handicraft exhibitions. Anything interesting coming up?",
       "goal_category": "concrete",
-      "expected_services": [
-        "exhibition_tracker",
-        "ticket_purchase"
+      "expected_services_with_params": [
+        {
+          "exhibition_tracker": {
+            "exhibition_type": [
+              "handicrafts",
+              "traditional"
+            ]
+          }
+        },
+        {
+          "ticket_purchase": {
+            "ticket_type": [
+              "museum"
+            ]
+          }
+        }
       ],
       "core_services": "exhibition_tracker:  \n- exhibition_type: [handicrafts]  \n\nrestaurant_finder:  \n- cuisine_type: [hyderabadi]  \n- dietary_restrictions: [vegetarian]  \n\ncrowd_monitor:  \n- location_name: [laad bazaar]",
       "final_summary": "Based on our discussion, your plan includes visiting a local handicraft exhibition in Hyderabad. You can check out the upcoming exhibitions focused on traditional handicrafts, which typically take around 1-2 hours. After that, you could enjoy lunch at a nearby restaurant that serves Hyderabadi cuisine, which will take about 1 hour. This will allow you to explore the local culture through handicrafts and savor the culinary delights of Hyderabad within a total of 4 hours.",
@@ -599,9 +696,21 @@
       ],
       "original_goal": "Would love to visit Durgam Cheruvu for a peaceful evening. Is the area nice for walking?",
       "goal_category": "concrete",
-      "expected_services": [
-        "water_quality",
-        "air_quality"
+      "expected_services_with_params": [
+        {
+          "water_quality": {
+            "water_body_name": [
+              "durgam cheruvu"
+            ]
+          }
+        },
+        {
+          "air_quality": {
+            "locations": [
+              "hitec city"
+            ]
+          }
+        }
       ],
       "core_services": "travel_options:  \n- preferred_mode: [walk]  \n\ncrowd_monitor:  \n- location_name: [durgam cheruvu]  \n\nrestaurant_finder:  \n- cuisine_type: [hyderabadi]  \n- dietary_restrictions: [vegetarian]",
       "final_summary": "Based on our discussion, your plan includes visiting Durgam Cheruvu for a peaceful evening. You can start your visit around 5:00 PM, enjoying the serene atmosphere and scenic views which are perfect for walking. After spending some time walking around the area, you could plan to have dinner at a nearby restaurant that offers Hyderabadi cuisine, which you can explore around 7:00 PM. This allows you to experience a nice blend of nature and local culinary delights within a 5-hour timeframe.",
@@ -686,9 +795,21 @@
       ],
       "original_goal": "Would love to enjoy the sunset at Tank Bund. Is it usually very crowded in the evenings?",
       "goal_category": "concrete",
-      "expected_services": [
-        "water_quality",
-        "crowd_monitor"
+      "expected_services_with_params": [
+        {
+          "water_quality": {
+            "water_body_name": [
+              "hussain sagar"
+            ]
+          }
+        },
+        {
+          "crowd_monitor": {
+            "location_name": [
+              "tank bund"
+            ]
+          }
+        }
       ],
       "core_services": "crowd_monitor:  \n- location_name: [tank bund, hussain sagar]  \n\ntravel_options:  \n- preferred_mode: [walk, public_transport, private_transport, auto_rickshaw, cab]",
       "final_summary": "Based on our discussion, your plan includes visiting Tank Bund to enjoy the sunset. It's advisable to arrive by 5:30 PM, as the sunset is usually around 6:00 PM. This location can get quite crowded in the evenings, so arriving early will help you find a good spot. \n\nBefore heading to Tank Bund, you can explore nearby attractions such as the Hussain Sagar Lake or enjoy a meal at a nearby restaurant. If you're interested in dining, I can help you find a suitable restaurant that fits your cuisine preference. Please let me know your choice, and I can assist further!",
@@ -773,9 +894,22 @@
       ],
       "original_goal": "I want to explore Laad Bazaar for traditional bangles. What's the best way to reach there?",
       "goal_category": "concrete",
-      "expected_services": [
-        "crowd_monitor",
-        "travel_options"
+      "expected_services_with_params": [
+        {
+          "crowd_monitor": {
+            "location_name": [
+              "laad bazaar"
+            ]
+          }
+        },
+        {
+          "travel_options": {
+            "preferred_mode": [
+              "auto_rickshaw",
+              "cab"
+            ]
+          }
+        }
       ],
       "core_services": "travel_options:  \n- preferred_mode: [public_transport]  \n\ncrowd_monitor:  \n- location_name: [laad bazaar, charminar]",
       "final_summary": "Based on our discussion, your plan includes exploring Laad Bazaar for traditional bangles. To reach Laad Bazaar, the best option is to take a public transport option, as it is both economical and convenient. \n\nYou can plan to spend about 1 hour browsing the shops in Laad Bazaar. After that, you can consider visiting the nearby historical site, Charminar, which offers a rich cultural experience. Allocate around 1 hour for this visit to fully appreciate its architecture and history. \n\nIn total, you are looking at approximately 2 hours for your activities, allowing for travel time to and from Laad Bazaar. This plan keeps you within your 3-hour limit while ensuring a focused exploration of traditional bangles and a glimpse of Hyderabad's heritage.",
@@ -860,10 +994,33 @@
       ],
       "original_goal": "I keep seeing these gorgeous lake photos on Instagram. Would love to spend an evening there and grab dinner nearby!",
       "goal_category": "ambiguous",
-      "expected_services": [
-        "water_quality",
-        "crowd_monitor",
-        "restaurant_finder"
+      "expected_services_with_params": [
+        {
+          "water_quality": {
+            "water_body_name": [
+              "hussain sagar"
+            ]
+          }
+        },
+        {
+          "crowd_monitor": {
+            "location_name": [
+              "tank bund"
+            ]
+          }
+        },
+        {
+          "restaurant_finder": {
+            "cuisine_type": [
+              "continental",
+              "north indian"
+            ],
+            "dietary_restrictions": [
+              "vegetarian",
+              "non_veg"
+            ]
+          }
+        }
       ],
       "core_services": "restaurant_finder:  \n- cuisine_type: [hyderabadi]  \n- dietary_restrictions: []  \n\ncrowd_monitor:  \n- location_name: [hussain sagar]  \n\ntravel_options:  \n- preferred_mode: [cab, auto_rickshaw]",
       "final_summary": "Based on our discussion, your plan includes spending your evening at Hussain Sagar Lake, where you can enjoy the scenic views and take photos. You can plan to arrive at the lake around 5:30 PM for a leisurely stroll along the waterfront, allowing you to soak in the atmosphere and capture those gorgeous shots you've seen on Instagram. After spending about an hour at the lake, you can head to a nearby restaurant for dinner. \n\nFor dinner, consider trying a local Hyderabadi cuisine restaurant, which you can reach by a short cab ride or auto-rickshaw. Aim to arrive at the restaurant by 7:00 PM and enjoy a delightful meal, wrapping up your evening by 8:30 PM. This way, you'll have a relaxed and enjoyable evening within a total time frame of about 5 hours.",
@@ -948,10 +1105,29 @@
       ],
       "original_goal": "Love anything artsy with a story behind it. Places where I can learn about local culture while enjoying the atmosphere.",
       "goal_category": "ambiguous",
-      "expected_services": [
-        "exhibition_tracker",
-        "historical_info",
-        "restaurant_finder"
+      "expected_services_with_params": [
+        {
+          "exhibition_tracker": {
+            "exhibition_type": [
+              "art",
+              "cultural"
+            ]
+          }
+        },
+        {
+          "historical_info": {
+            "site_name": [
+              "salar jung museum"
+            ]
+          }
+        },
+        {
+          "restaurant_finder": {
+            "cuisine_type": [
+              "hyderabadi"
+            ]
+          }
+        }
       ],
       "core_services": "historical_info:  \n- site_name: [salar jung museum]  \n\nexhibition_tracker:  \n- exhibition_type: [handicrafts]  \n\nrestaurant_finder:  \n- cuisine_type: [hyderabadi, irani]  \n- dietary_restrictions: [non_veg, vegetarian]",
       "final_summary": "Based on our discussion, your plan includes:\n\n1. **Salar Jung Museum** (1.5 hours): Start your visit at the Salar Jung Museum, where you can immerse yourself in local culture through its rich collection of art and antiques, showcasing a blend of various cultures and histories. \n\n2. **Exhibition on Traditional Handicrafts** (1 hour): After exploring the museum, head to an ongoing exhibition featuring traditional handicrafts. This will provide insight into the local art forms and craftsmanship, enhancing your understanding of the cultural heritage.\n\n3. **Lunch at a Local Irani Café** (1 hour): Conclude your cultural exploration with lunch at a local Irani café, where you can savor Hyderabadi cuisine while soaking in the nostalgic atmosphere that these cafés are known for.\n\nIn total, this plan takes approximately 3.5 hours, leaving you with some time to relax or explore nearby areas at your leisure.",
@@ -1036,10 +1212,35 @@
       ],
       "original_goal": "My grandparents always talk about Hyderabad's old charm. Want to experience that authentic vibe and maybe try some traditional snacks.",
       "goal_category": "ambiguous",
-      "expected_services": [
-        "historical_info",
-        "crowd_monitor",
-        "restaurant_finder"
+      "expected_services_with_params": [
+        {
+          "historical_info": {
+            "site_name": [
+              "charminar",
+              "mecca masjid"
+            ]
+          }
+        },
+        {
+          "crowd_monitor": {
+            "location_name": [
+              "charminar",
+              "laad bazaar"
+            ]
+          }
+        },
+        {
+          "restaurant_finder": {
+            "cuisine_type": [
+              "hyderabadi",
+              "irani"
+            ],
+            "dietary_restrictions": [
+              "vegetarian",
+              "non_veg"
+            ]
+          }
+        }
       ],
       "core_services": "restaurant_finder:  \n- cuisine_type: [hyderabadi, street food]  \n- dietary_restrictions: [vegetarian]  \n\ncrowd_monitor:  \n- location_name: [charminar, laad bazaar]  \n\nhistorical_info:  \n- site_name: [charminar]",
       "final_summary": "Based on our discussion, your plan includes a visit to Charminar, where you can explore the historical significance of this iconic monument for about 1 hour from 10:00 AM to 11:00 AM. Following that, you can take a stroll through Laad Bazaar, which is nearby, to experience the authentic charm and shop for traditional items and snacks for about 1 hour from 11:15 AM to 12:15 PM. Finally, you can enjoy some traditional Hyderabadi snacks at a local eatery around the area from 12:30 PM to 1:00 PM, rounding off your 3-hour experience of Hyderabad's old charm.",
@@ -1124,9 +1325,25 @@
       ],
       "original_goal": "Would love to try some street food. Any areas famous for chaat and local snacks?",
       "goal_category": "concrete",
-      "expected_services": [
-        "restaurant_finder",
-        "crowd_monitor"
+      "expected_services_with_params": [
+        {
+          "restaurant_finder": {
+            "cuisine_type": [
+              "street food"
+            ],
+            "dietary_restrictions": [
+              "vegetarian"
+            ]
+          }
+        },
+        {
+          "crowd_monitor": {
+            "location_name": [
+              "charminar",
+              "laad bazaar"
+            ]
+          }
+        }
       ],
       "core_services": "restaurant_finder:  \n- cuisine_type: [street food]  \n- dietary_restrictions: []  \n\ncrowd_monitor:  \n- location_name: [charminar, laad bazaar]",
       "final_summary": "Based on our discussion, your plan includes visiting Laad Bazaar for some delicious street food, particularly chaat and local snacks. You can spend about 1 hour exploring the vibrant stalls and trying various delicacies. Afterward, you can take a short walk to the iconic Charminar, which is just a few minutes away, to enjoy the beautiful architecture and soak in the atmosphere for another hour. This plan gives you a delightful street food experience within a total of 2 hours.",
@@ -1211,9 +1428,22 @@
       ],
       "original_goal": "Would love to see some local handicraft exhibitions. Anything interesting coming up?",
       "goal_category": "concrete",
-      "expected_services": [
-        "exhibition_tracker",
-        "ticket_purchase"
+      "expected_services_with_params": [
+        {
+          "exhibition_tracker": {
+            "exhibition_type": [
+              "handicrafts",
+              "traditional"
+            ]
+          }
+        },
+        {
+          "ticket_purchase": {
+            "ticket_type": [
+              "museum"
+            ]
+          }
+        }
       ],
       "core_services": "exhibition_tracker:  \n- exhibition_type: [handicrafts]  \n\nticket_purchase:  \n- ticket_type: [museum]  \n\ntravel_options:  \n- preferred_mode: [cab, public_transport]",
       "final_summary": "Based on our discussion, your plan includes visiting a local handicraft exhibition and purchasing tickets for it. You can allocate about 2 hours for exploring the exhibition. Since you have a total of 5 hours, you will have ample time to travel to the venue using your preferred mode of transport, perhaps taking a cab or using public transport, which will take about 30 minutes each way. This way, you can enjoy the exhibition and have time left for any other activities or local dining experiences after. Ensure to check the exhibition timings in advance to optimize your visit!",
@@ -1298,10 +1528,33 @@
       ],
       "original_goal": "I keep seeing these gorgeous lake photos on Instagram. Would love to spend an evening there and grab dinner nearby!",
       "goal_category": "ambiguous",
-      "expected_services": [
-        "water_quality",
-        "crowd_monitor",
-        "restaurant_finder"
+      "expected_services_with_params": [
+        {
+          "water_quality": {
+            "water_body_name": [
+              "hussain sagar"
+            ]
+          }
+        },
+        {
+          "crowd_monitor": {
+            "location_name": [
+              "tank bund"
+            ]
+          }
+        },
+        {
+          "restaurant_finder": {
+            "cuisine_type": [
+              "continental",
+              "north indian"
+            ],
+            "dietary_restrictions": [
+              "vegetarian",
+              "non_veg"
+            ]
+          }
+        }
       ],
       "core_services": "restaurant_finder:  \n- cuisine_type: [hyderabadi, south indian]  \n- dietary_restrictions: []  \n  \ncrowd_monitor:  \n- location_name: [hussain sagar, tank bund]  \n  \nwater_quality:  \n- water_body_name: [hussain sagar]",
       "final_summary": "Based on our discussion, your plan includes an evening visit to Hussain Sagar Lake, where you can enjoy the tranquil beauty and take in the stunning views. You can spend approximately 1.5 hours at the lake, enjoying a leisurely stroll or a boat ride around the lake. After that, you can head to a nearby restaurant for dinner. I suggest dining at a restaurant that offers delicious Hyderabadi cuisine, which is perfect for an authentic experience. You can allocate about 1.5 hours for dinner. Overall, this plan allows you to enjoy both the picturesque lake and a satisfying meal within a 3-hour timeframe.",
@@ -1386,9 +1639,21 @@
       ],
       "original_goal": "I've heard Gandipet Lake is beautiful. How's the water quality there these days?",
       "goal_category": "concrete",
-      "expected_services": [
-        "water_quality",
-        "air_quality"
+      "expected_services_with_params": [
+        {
+          "water_quality": {
+            "water_body_name": [
+              "gandipet lake"
+            ]
+          }
+        },
+        {
+          "air_quality": {
+            "locations": [
+              "hyderabad"
+            ]
+          }
+        }
       ],
       "core_services": "water_quality:  \n- water_body_name: [gandipet lake]  \n\ntravel_options:  \n- preferred_mode: [private_transport, cab]",
       "final_summary": "Based on our discussion, your plan includes a visit to Gandipet Lake to enjoy the beautiful scenery. Before heading there, I will check the current water quality at Gandipet Lake to ensure it's suitable for your visit. You can plan to spend around 1.5 to 2 hours at the lake, enjoying the views and possibly taking a stroll around the area. Depending on your preferred mode of travel, I recommend using either private transport or a cab for a quick and comfortable ride to the lake, which should take approximately 30 minutes from the city center. This plan fits comfortably within your 3-hour timeframe.",
@@ -1473,9 +1738,22 @@
       ],
       "original_goal": "Planning to visit Ramoji Film City. What's the best way to plan this trip?",
       "goal_category": "concrete",
-      "expected_services": [
-        "ticket_purchase",
-        "travel_options"
+      "expected_services_with_params": [
+        {
+          "ticket_purchase": {
+            "ticket_type": [
+              "ramoji film city"
+            ]
+          }
+        },
+        {
+          "travel_options": {
+            "preferred_mode": [
+              "private_transport",
+              "cab"
+            ]
+          }
+        }
       ],
       "core_services": "travel_options:  \n- preferred_mode: [private_transport, cab]  \nticket_purchase:  \n- ticket_type: [ramoji film city]",
       "final_summary": "Based on our discussion, your plan includes visiting Ramoji Film City. To make the most of your trip while staying within a 3-hour timeframe, here’s a suggested itinerary:\n\n1. **Travel Options**: \n   - Choose to travel by **private transport** or **cab** to ensure a quick and comfortable journey to Ramoji Film City.\n\n2. **Activity Timing**: \n   - Depart for Ramoji Film City early in the morning to avoid traffic, aiming to leave by 9:00 AM.\n   - Plan to arrive by 10:00 AM. \n\n3. **Ticket Purchase**: \n   - Purchase your tickets for Ramoji Film City in advance online to save time and ensure entry.\n\nFollowing this plan allows you to maximize your experience at Ramoji Film City while keeping your visit efficient and enjoyable.",
@@ -1560,8 +1838,17 @@
       ],
       "original_goal": "Looking for a good place serving traditional Irani chai and Osmania biscuits!",
       "goal_category": "concrete",
-      "expected_services": [
-        "restaurant_finder"
+      "expected_services_with_params": [
+        {
+          "restaurant_finder": {
+            "cuisine_type": [
+              "irani"
+            ],
+            "dietary_restrictions": [
+              "vegetarian"
+            ]
+          }
+        }
       ],
       "core_services": "restaurant_finder:  \n- cuisine_type: [irani]  \n- dietary_restrictions: []  \n\ncrowd_monitor:  \n- location_name: [charminar, laad bazaar]",
       "final_summary": "Based on our discussion, your plan includes visiting a traditional Irani café to enjoy authentic Irani chai and Osmania biscuits. I recommend starting your visit around 3:00 PM, which will give you ample time to savor your tea and snacks. Afterward, you can take a leisurely stroll to the nearby historic Charminar, allowing about an hour to admire its architecture and explore the surrounding market area. You can plan to wrap up your activities by 5:00 PM, making the most of your 2-hour visit to both locations.",
@@ -1646,9 +1933,21 @@
       ],
       "original_goal": "I'd love to visit Charminar and understand its history. Wonder if it gets too crowded on weekends?",
       "goal_category": "concrete",
-      "expected_services": [
-        "historical_info",
-        "crowd_monitor"
+      "expected_services_with_params": [
+        {
+          "historical_info": {
+            "site_name": [
+              "charminar"
+            ]
+          }
+        },
+        {
+          "crowd_monitor": {
+            "location_name": [
+              "charminar"
+            ]
+          }
+        }
       ],
       "core_services": "crowd_monitor:  \n- location_name: [charminar, laad bazaar]  \n\nhistorical_info:  \n- site_name: [charminar]",
       "final_summary": "Based on our discussion, your plan includes visiting the Charminar to explore its rich history. To ensure you have a great experience, I recommend checking the crowd levels at Charminar first to see if it gets too crowded on weekends. You can spend approximately 1 hour exploring the site and learning about its historical significance. Following that, you can allocate around 30 minutes to relax and take photos in the surrounding area, which may allow you to enjoy the vibrant atmosphere of the market nearby. Your total visit would be approximately 1.5 hours, keeping within your preferred time frame.",
@@ -1733,8 +2032,17 @@
       ],
       "original_goal": "Craving some authentic Hyderabadi biryani! Any vegetarian-friendly places you'd recommend?",
       "goal_category": "concrete",
-      "expected_services": [
-        "restaurant_finder"
+      "expected_services_with_params": [
+        {
+          "restaurant_finder": {
+            "cuisine_type": [
+              "hyderabadi"
+            ],
+            "dietary_restrictions": [
+              "vegetarian"
+            ]
+          }
+        }
       ],
       "core_services": "restaurant_finder:  \n- cuisine_type: [hyderabadi]  \n- dietary_restrictions: [vegetarian]  \n\ncrowd_monitor:  \n- location_name: [charminar, laad bazaar]",
       "final_summary": "Based on our discussion, your plan includes visiting a vegetarian-friendly restaurant to enjoy authentic Hyderabadi biryani. You can try \"Paradise\" or \"Biryani House,\" both renowned for their delicious vegetarian options. \n\nAssuming you spend about 1 hour at the restaurant for your meal, you can plan to visit either after 12:00 PM or 7:00 PM. This schedule allows you to indulge in the flavors of Hyderabadi cuisine within your 2-hour timeframe. Enjoy your culinary journey!",
@@ -1819,9 +2127,21 @@
       ],
       "original_goal": "I've heard Gandipet Lake is beautiful. How's the water quality there these days?",
       "goal_category": "concrete",
-      "expected_services": [
-        "water_quality",
-        "air_quality"
+      "expected_services_with_params": [
+        {
+          "water_quality": {
+            "water_body_name": [
+              "gandipet lake"
+            ]
+          }
+        },
+        {
+          "air_quality": {
+            "locations": [
+              "hyderabad"
+            ]
+          }
+        }
       ],
       "core_services": "water_quality:  \n- water_body_name: [gandipet lake]  \n\nrestaurant_finder:  \n- cuisine_type: [hyderabadi, south indian]  \n- dietary_restrictions: [vegetarian]",
       "final_summary": "Based on our discussion, your plan includes visiting Gandipet Lake to appreciate its beauty. You can check the water quality there to ensure a pleasant experience. Additionally, I recommend finding a nearby restaurant for a meal. This visit to Gandipet Lake and dining should comfortably fit within your 3-hour timeframe.",
@@ -1906,8 +2226,17 @@
       ],
       "original_goal": "Looking for a good place serving traditional Irani chai and Osmania biscuits!",
       "goal_category": "concrete",
-      "expected_services": [
-        "restaurant_finder"
+      "expected_services_with_params": [
+        {
+          "restaurant_finder": {
+            "cuisine_type": [
+              "irani"
+            ],
+            "dietary_restrictions": [
+              "vegetarian"
+            ]
+          }
+        }
       ],
       "core_services": "restaurant_finder:  \n- cuisine_type: [irani]  \n- dietary_restrictions: []  \n\ncrowd_monitor:  \n- location_name: [laad bazaar]",
       "final_summary": "Based on our discussion, your plan includes visiting a traditional Irani café for Irani chai and Osmania biscuits. A great option for this is the iconic Café Nimra, which is known for its authentic flavors. \n\nYou can start your visit around 3:00 PM to enjoy a leisurely snack with the local delicacies. After savoring your chai and biscuits, you can take a walk to the nearby Laad Bazaar, famous for its bangles and traditional handicrafts, which you can explore until about 4:30 PM. \n\nThis plan keeps you within a total time frame of 1.5 hours, leaving you plenty of time to enjoy your experience without feeling rushed.",
@@ -1992,9 +2321,21 @@
       ],
       "original_goal": "The Qutub Shahi Tombs look beautiful in photos. How can I plan a visit there?",
       "goal_category": "concrete",
-      "expected_services": [
-        "historical_info",
-        "crowd_monitor"
+      "expected_services_with_params": [
+        {
+          "historical_info": {
+            "site_name": [
+              "qutub shahi tombs"
+            ]
+          }
+        },
+        {
+          "crowd_monitor": {
+            "location_name": [
+              "golconda fort"
+            ]
+          }
+        }
       ],
       "core_services": "travel_options:  \n- preferred_mode: [private_transport]  \n\nhistorical_info:  \n- site_name: [qutub shahi tombs]  \n\nrestaurant_finder:  \n- cuisine_type: [hyderabadi]  \n- dietary_restrictions: [none]",
       "final_summary": "Based on our discussion, your plan includes visiting the Qutub Shahi Tombs, which are a beautiful historical site perfect for photography. You can allocate around 1.5 hours for exploring the tombs and taking pictures. After your visit, you can enjoy a meal at a nearby restaurant that specializes in Hyderabadi cuisine. I recommend spending about 1 hour for dining. \n\nFor transportation, you can opt for a private transport option to make your travel more comfortable and efficient. This will allow you to keep your visit within a total of 4 hours, including travel time. The total itinerary would look like this:\n\n- **Visit Qutub Shahi Tombs**: 1.5 hours\n- **Travel to a nearby restaurant**: 30 minutes\n- **Enjoy a meal**: 1 hour\n- **Return travel**: 1 hour \n\nThis plan ensures you have a focused and enjoyable experience at the tombs along with a delightful meal.",
@@ -2079,9 +2420,21 @@
       ],
       "original_goal": "I've heard Gandipet Lake is beautiful. How's the water quality there these days?",
       "goal_category": "concrete",
-      "expected_services": [
-        "water_quality",
-        "air_quality"
+      "expected_services_with_params": [
+        {
+          "water_quality": {
+            "water_body_name": [
+              "gandipet lake"
+            ]
+          }
+        },
+        {
+          "air_quality": {
+            "locations": [
+              "hyderabad"
+            ]
+          }
+        }
       ],
       "core_services": "water_quality:  \n- water_body_name: [gandipet lake]  \n\nrestaurant_finder:  \n- cuisine_type: [hyderabadi]  \n- dietary_restrictions: [vegetarian]",
       "final_summary": "Based on our discussion, your plan includes checking the water quality at Gandipet Lake, which is known for its beauty. This activity will take approximately 30 minutes. After that, you can enjoy a meal at a nearby restaurant that serves Hyderabadi cuisine, allowing for about 1 hour for dining. This plan keeps you within your 2-hour timeframe while focusing on the lovely experience at Gandipet Lake.",
@@ -2166,8 +2519,17 @@
       ],
       "original_goal": "Looking for a good place serving traditional Irani chai and Osmania biscuits!",
       "goal_category": "concrete",
-      "expected_services": [
-        "restaurant_finder"
+      "expected_services_with_params": [
+        {
+          "restaurant_finder": {
+            "cuisine_type": [
+              "irani"
+            ],
+            "dietary_restrictions": [
+              "vegetarian"
+            ]
+          }
+        }
       ],
       "core_services": "restaurant_finder:  \n- cuisine_type: [irani]  \n- dietary_restrictions: []  \n\ncrowd_monitor:  \n- location_name: [laad bazaar]",
       "final_summary": "Based on our discussion, your plan includes visiting a well-known restaurant that serves traditional Irani chai and Osmania biscuits. You can explore the famous Irani cafes in Hyderabad, which typically take about 1 hour for a delightful experience. After enjoying your tea and biscuits, you can take a short walk to Laad Bazaar, which can take an additional hour to explore the vibrant market known for its bangles and traditional items. This plan should comfortably fit within your 3-hour time frame.",
@@ -2252,10 +2614,34 @@
       ],
       "original_goal": "Been reading about Hyderabad's royal history. Would love to see some of that grandeur and taste what the Nizams enjoyed!",
       "goal_category": "ambiguous",
-      "expected_services": [
-        "historical_info",
-        "restaurant_finder",
-        "crowd_monitor"
+      "expected_services_with_params": [
+        {
+          "historical_info": {
+            "site_name": [
+              "charminar",
+              "golconda fort"
+            ]
+          }
+        },
+        {
+          "restaurant_finder": {
+            "cuisine_type": [
+              "hyderabadi",
+              "mughlai"
+            ],
+            "dietary_restrictions": [
+              "non_veg"
+            ]
+          }
+        },
+        {
+          "crowd_monitor": {
+            "location_name": [
+              "charminar",
+              "golconda fort"
+            ]
+          }
+        }
       ],
       "core_services": "historical_info:  \n- site_name: [golconda fort, salar jung museum]  \n\nrestaurant_finder:  \n- cuisine_type: [hyderabadi]  \n- dietary_restrictions: [non_veg]  \n\ncrowd_monitor:  \n- location_name: [golconda fort, salar jung museum]",
       "final_summary": "Based on our discussion, your plan includes visiting the magnificent Golconda Fort to explore its royal history and grandeur from 10:00 AM to 11:30 AM. Following that, you can head to the Salar Jung Museum from 11:45 AM to 1:15 PM to delve deeper into the rich heritage of the Nizams. Finally, to savor the delectable flavors that the Nizams enjoyed, you can have lunch at a renowned Hyderabadi restaurant from 1:30 PM to 2:30 PM, where you can relish dishes like Biryani and Haleem. This itinerary allows you to enjoy the royal history and culinary delights of Hyderabad within a 4-hour timeframe.",
@@ -2340,9 +2726,25 @@
       ],
       "original_goal": "Would love to try some street food. Any areas famous for chaat and local snacks?",
       "goal_category": "concrete",
-      "expected_services": [
-        "restaurant_finder",
-        "crowd_monitor"
+      "expected_services_with_params": [
+        {
+          "restaurant_finder": {
+            "cuisine_type": [
+              "street food"
+            ],
+            "dietary_restrictions": [
+              "vegetarian"
+            ]
+          }
+        },
+        {
+          "crowd_monitor": {
+            "location_name": [
+              "charminar",
+              "laad bazaar"
+            ]
+          }
+        }
       ],
       "core_services": "restaurant_finder:  \n- cuisine_type: [street food]  \n- dietary_restrictions: [vegetarian]  \n\ncrowd_monitor:  \n- location_name: [laad bazaar, tank bund]",
       "final_summary": "Based on our discussion, your plan includes visiting Laad Bazaar, a famous area known for its street food and local snacks, particularly chaat. You can start your culinary adventure there around 5:00 PM and enjoy the vibrant atmosphere as you sample various local delicacies like pani puri and bhel puri. After spending about an hour savoring the street food, you can then proceed to Tank Bund around 6:00 PM. Here, you can enjoy the scenic views and perhaps grab a refreshing drink as you take in the sunset. This itinerary fits within your 2-hour time frame and allows you to experience the local street food culture effectively.",
@@ -2427,9 +2829,25 @@
       ],
       "original_goal": "Would love to try some street food. Any areas famous for chaat and local snacks?",
       "goal_category": "concrete",
-      "expected_services": [
-        "restaurant_finder",
-        "crowd_monitor"
+      "expected_services_with_params": [
+        {
+          "restaurant_finder": {
+            "cuisine_type": [
+              "street food"
+            ],
+            "dietary_restrictions": [
+              "vegetarian"
+            ]
+          }
+        },
+        {
+          "crowd_monitor": {
+            "location_name": [
+              "charminar",
+              "laad bazaar"
+            ]
+          }
+        }
       ],
       "core_services": "restaurant_finder:  \n- cuisine_type: [street food]  \n- dietary_restrictions: []  \n\ncrowd_monitor:  \n- location_name: [charminar, laad bazaar, hussain sagar]",
       "final_summary": "Based on our discussion, your plan includes visiting Laad Bazaar for its vibrant street food scene, particularly known for its chaat and local snacks. You can spend about 1 hour exploring the various stalls and trying out different dishes. \n\nFollowing that, you can head to the famous Street Food at Hussain Sagar, where you can enjoy an additional 1 hour of indulging in local delicacies by the lakeside. \n\nThis plan allows you to experience the best street food Hyderabad has to offer within a total time frame of 2 hours, leaving you with an extra hour for travel or any additional activities.",
@@ -2514,9 +2932,21 @@
       ],
       "original_goal": "I'm thinking of spending some time near Hussain Sagar Lake. How clean is the water there?",
       "goal_category": "concrete",
-      "expected_services": [
-        "water_quality",
-        "air_quality"
+      "expected_services_with_params": [
+        {
+          "water_quality": {
+            "water_body_name": [
+              "hussain sagar"
+            ]
+          }
+        },
+        {
+          "air_quality": {
+            "locations": [
+              "hyderabad"
+            ]
+          }
+        }
       ],
       "core_services": "water_quality:  \n- water_body_name: [hussain sagar]  \ncrowd_monitor:  \n- location_name: [hussain sagar]",
       "final_summary": "Based on our discussion, your plan includes spending time near Hussain Sagar Lake. You will first check the water quality of Hussain Sagar to ensure it meets your preferences. After that, you can explore the surrounding area, which typically offers a pleasant atmosphere. \n\nYou can allocate approximately 1 hour to check the water quality and enjoy the views around the lake. If you wish to continue your visit, consider walking along the lake or visiting nearby attractions such as the Buddha statue in the center of the lake, which can take another hour. This gives you a total of around 2 hours of activities near Hussain Sagar Lake, allowing for a relaxed and enjoyable experience within your 4-hour timeframe.",
@@ -2601,10 +3031,34 @@
       ],
       "original_goal": "History nerd but also a foodie. Want to explore places that tell a story while munching on local specialties!",
       "goal_category": "ambiguous",
-      "expected_services": [
-        "historical_info",
-        "restaurant_finder",
-        "exhibition_tracker"
+      "expected_services_with_params": [
+        {
+          "historical_info": {
+            "site_name": [
+              "charminar",
+              "golconda fort"
+            ]
+          }
+        },
+        {
+          "restaurant_finder": {
+            "cuisine_type": [
+              "hyderabadi",
+              "street food"
+            ],
+            "dietary_restrictions": [
+              "vegetarian",
+              "non_veg"
+            ]
+          }
+        },
+        {
+          "exhibition_tracker": {
+            "exhibition_type": [
+              "historical"
+            ]
+          }
+        }
       ],
       "core_services": "restaurant_finder:  \n- cuisine_type: [hyderabadi, street food]  \n- dietary_restrictions: []  \n\ncrowd_monitor:  \n- location_name: [charminar, laad bazaar]  \n\nhistorical_info:  \n- site_name: [charminar, salar jung museum]",
       "final_summary": "Based on our discussion, your plan includes visiting the historic Charminar and savoring local Hyderabadi cuisine. \n\n1. **Charminar Visit (1 hour)** - Start your exploration at the iconic Charminar, where you'll immerse yourself in the rich history of Hyderabad. The stunning architecture and vibrant surroundings will provide plenty of opportunities for photographs and learning about this landmark.\n\n2. **Lunch at Laad Bazaar (1 hour)** - After your visit, take a short walk to Laad Bazaar, which is nearby. Here, you can enjoy delectable street food, including local specialties like Hyderabadi biryani and kebabs while shopping for traditional bangles and souvenirs.\n\n3. **Salar Jung Museum (1 hour)** - Finally, head to the Salar Jung Museum, where you can explore an extensive collection of art and artifacts that tell the story of India's diverse history and culture.\n\nThis itinerary is designed to provide you with both a historical perspective and a taste of local flavors, all within a concise 3-hour timeframe. Enjoy your exploration!",
@@ -2689,10 +3143,37 @@
       ],
       "original_goal": "The Golconda Fort sounds fascinating! I'd like to explore it thoroughly. What's the best way to get there?",
       "goal_category": "concrete",
-      "expected_services": [
-        "historical_info",
-        "crowd_monitor",
-        "ticket_purchase"
+      "expected_services_with_params": [
+        {
+          "historical_info": {
+            "site_name": [
+              "golconda fort"
+            ]
+          }
+        },
+        {
+          "crowd_monitor": {
+            "location_name": [
+              "golconda fort"
+            ]
+          }
+        },
+        {
+          "ticket_purchase": {
+            "ticket_type": [
+              "monument"
+            ]
+          }
+        },
+        {
+          "travel_options": {
+            "preferred_mode": [
+              "private_transport",
+              "auto_rickshaw",
+              "cab"
+            ]
+          }
+        }
       ],
       "core_services": "travel_options:  \n- preferred_mode: [private_transport]  \n\ncrowd_monitor:  \n- location_name: [golconda fort]  \n\nhistorical_info:  \n- site_name: [golconda fort]  \n\nrestaurant_finder:  \n- cuisine_type: [hyderabadi]  \n- dietary_restrictions: []",
       "final_summary": "Based on our discussion, your plan includes a visit to Golconda Fort, which you will explore thoroughly. It is best to reach the fort using private transport, allowing for a comfortable journey. You can allocate around 2 hours for your exploration of the fort to enjoy its rich history and stunning architecture.\n\nAfter your visit, you can head to a nearby restaurant for a delicious meal. I recommend trying some local Hyderabadi cuisine, which you can enjoy in about 1 hour. Overall, this plan is designed to fit within your 3-hour time constraint while providing a fulfilling experience at Golconda Fort and a taste of the local culinary delights.",
@@ -2777,9 +3258,21 @@
       ],
       "original_goal": "The Qutub Shahi Tombs look beautiful in photos. How can I plan a visit there?",
       "goal_category": "concrete",
-      "expected_services": [
-        "historical_info",
-        "crowd_monitor"
+      "expected_services_with_params": [
+        {
+          "historical_info": {
+            "site_name": [
+              "qutub shahi tombs"
+            ]
+          }
+        },
+        {
+          "crowd_monitor": {
+            "location_name": [
+              "golconda fort"
+            ]
+          }
+        }
       ],
       "core_services": "historical_info:  \n- site_name: [qutub shahi tombs]  \n\nrestaurant_finder:  \n- cuisine_type: [hyderabadi]  \n- dietary_restrictions: []  \n\ntravel_options:  \n- preferred_mode: [walk, public_transport, auto_rickshaw, private_transport, cab]",
       "final_summary": "Based on our discussion, your plan includes a visit to the **Qutub Shahi Tombs**, where you can explore the beautiful architecture and capture stunning photographs. To make the most of your visit, I recommend allocating around 1.5 hours for exploring the tombs. \n\nAfter your visit, you can head to a nearby restaurant to enjoy some local cuisine. I suggest trying a **Hyderabadi restaurant** for a taste of the famous biryani or other regional delicacies. Plan to spend about 1 hour for lunch.\n\nIn total, this itinerary will fit comfortably within your 4-hour time frame, allowing you to enjoy the historic site and savor the local flavors.",
@@ -2864,9 +3357,22 @@
       ],
       "original_goal": "Planning to visit Ramoji Film City. What's the best way to plan this trip?",
       "goal_category": "concrete",
-      "expected_services": [
-        "ticket_purchase",
-        "travel_options"
+      "expected_services_with_params": [
+        {
+          "ticket_purchase": {
+            "ticket_type": [
+              "ramoji film city"
+            ]
+          }
+        },
+        {
+          "travel_options": {
+            "preferred_mode": [
+              "private_transport",
+              "cab"
+            ]
+          }
+        }
       ],
       "core_services": "travel_options:  \n- preferred_mode: [private_transport, cab]  \n\nticket_purchase:  \n- ticket_type: [ramoji film city]  \n\nexhibition_tracker:  \n- exhibition_type: [cultural, interactive]",
       "final_summary": "Based on our discussion, your plan includes visiting Ramoji Film City. Here’s a focused summary of your itinerary for a 4-hour visit:\n\n1. **Travel Options**: Start your trip by taking a private transport or cab to Ramoji Film City. This will save you time and allow you to reach comfortably.\n\n2. **Ticket Purchase**: Make sure to purchase your tickets for Ramoji Film City in advance to avoid long queues. You can buy tickets online or at the entrance, depending on your preference.\n\n3. **Exhibition Tracker**: While at Ramoji Film City, check out any ongoing exhibitions. Depending on the day of your visit, you may find cultural or interactive exhibitions that will enhance your experience.\n\nThis plan allows you to maximize your time at Ramoji Film City while enjoying the attractions and exhibitions available. Enjoy your visit!",
@@ -2951,9 +3457,21 @@
       ],
       "original_goal": "I've heard Gandipet Lake is beautiful. How's the water quality there these days?",
       "goal_category": "concrete",
-      "expected_services": [
-        "water_quality",
-        "air_quality"
+      "expected_services_with_params": [
+        {
+          "water_quality": {
+            "water_body_name": [
+              "gandipet lake"
+            ]
+          }
+        },
+        {
+          "air_quality": {
+            "locations": [
+              "hyderabad"
+            ]
+          }
+        }
       ],
       "core_services": "water_quality:  \n- water_body_name: [gandipet lake]  \n\nrestaurant_finder:  \n- cuisine_type: [hyderabadi]  \n- dietary_restrictions: [vegetarian, non_veg]",
       "final_summary": "Based on our discussion, your plan includes visiting Gandipet Lake to enjoy its beautiful surroundings and check the current water quality there. You can spend approximately 1 hour at the lake, taking in the views and relaxing by the water. After that, consider dining at a nearby restaurant that serves local Hyderabadi cuisine, which can take an additional 1 to 1.5 hours. This allows you to enjoy a meal while soaking in the local culture, making your total activity time around 3 hours.",
@@ -3038,8 +3556,15 @@
       ],
       "original_goal": "Any photography exhibitions or galleries worth visiting this week?",
       "goal_category": "concrete",
-      "expected_services": [
-        "exhibition_tracker"
+      "expected_services_with_params": [
+        {
+          "exhibition_tracker": {
+            "exhibition_type": [
+              "photography",
+              "art"
+            ]
+          }
+        }
       ],
       "core_services": "exhibition_tracker:  \n- exhibition_type: [photography]  \n\nticket_purchase:  \n- ticket_type: [museum]  \n\ncrowd_monitor:  \n- location_name: [inorbit mall, gvk one]",
       "final_summary": "Based on our discussion, your plan includes visiting a photography exhibition this week at a local gallery. You can start your visit around 10:00 AM, spending approximately 1-1.5 hours exploring the exhibition. After that, you can head to a nearby café for a light lunch, allowing around 1 hour for that. This brings your total time to about 2-2.5 hours, keeping you well within your 3-hour limit for the day. Enjoy your visit!",
@@ -3124,10 +3649,34 @@
       ],
       "original_goal": "Been reading about Hyderabad's royal history. Would love to see some of that grandeur and taste what the Nizams enjoyed!",
       "goal_category": "ambiguous",
-      "expected_services": [
-        "historical_info",
-        "restaurant_finder",
-        "crowd_monitor"
+      "expected_services_with_params": [
+        {
+          "historical_info": {
+            "site_name": [
+              "charminar",
+              "golconda fort"
+            ]
+          }
+        },
+        {
+          "restaurant_finder": {
+            "cuisine_type": [
+              "hyderabadi",
+              "mughlai"
+            ],
+            "dietary_restrictions": [
+              "non_veg"
+            ]
+          }
+        },
+        {
+          "crowd_monitor": {
+            "location_name": [
+              "charminar",
+              "golconda fort"
+            ]
+          }
+        }
       ],
       "core_services": "restaurant_finder:  \n- cuisine_type: [hyderabadi]  \n- dietary_restrictions: [non_veg]  \n  \ncrowd_monitor:  \n- location_name: [charminar, salar jung museum]  \n  \nhistorical_info:  \n- site_name: [charminar, salar jung museum]",
       "final_summary": "Based on our discussion, your plan includes visiting the Charminar to explore its historical significance and the grandeur of Hyderabad's royal past, which should take about 1 hour from 10:00 AM to 11:00 AM. Following that, you can head to the Salar Jung Museum to delve deeper into the art and artifacts from the Nizam's era, spending approximately 1.5 hours there from 11:15 AM to 12:45 PM. To conclude your 3-hour plan, you can enjoy an authentic Hyderabadi meal at a local restaurant, which will take around 30 minutes from 1:00 PM to 1:30 PM. This itinerary allows you to immerse yourself in the royal history of Hyderabad while savoring the flavors that the Nizams cherished.",
@@ -3212,9 +3761,22 @@
       ],
       "original_goal": "Would love to see some local handicraft exhibitions. Anything interesting coming up?",
       "goal_category": "concrete",
-      "expected_services": [
-        "exhibition_tracker",
-        "ticket_purchase"
+      "expected_services_with_params": [
+        {
+          "exhibition_tracker": {
+            "exhibition_type": [
+              "handicrafts",
+              "traditional"
+            ]
+          }
+        },
+        {
+          "ticket_purchase": {
+            "ticket_type": [
+              "museum"
+            ]
+          }
+        }
       ],
       "core_services": "exhibition_tracker:  \n- exhibition_type: [handicrafts, cultural]  \n\nticket_purchase:  \n- ticket_type: [museum]",
       "final_summary": "Based on our discussion, your plan includes visiting a local handicraft exhibition. You can check out upcoming cultural exhibitions that showcase local craftsmanship. Ensure to allocate around 1.5 to 2 hours for this visit. After the exhibition, you may consider purchasing tickets for a nearby museum to learn more about the local art and history, which could take an additional hour. This plan keeps you engaged with local culture while fitting comfortably within your 3-hour timeframe.",
@@ -3299,10 +3861,37 @@
       ],
       "original_goal": "The Golconda Fort sounds fascinating! I'd like to explore it thoroughly. What's the best way to get there?",
       "goal_category": "concrete",
-      "expected_services": [
-        "historical_info",
-        "crowd_monitor",
-        "ticket_purchase"
+      "expected_services_with_params": [
+        {
+          "historical_info": {
+            "site_name": [
+              "golconda fort"
+            ]
+          }
+        },
+        {
+          "crowd_monitor": {
+            "location_name": [
+              "golconda fort"
+            ]
+          }
+        },
+        {
+          "ticket_purchase": {
+            "ticket_type": [
+              "monument"
+            ]
+          }
+        },
+        {
+          "travel_options": {
+            "preferred_mode": [
+              "private_transport",
+              "auto_rickshaw",
+              "cab"
+            ]
+          }
+        }
       ],
       "core_services": "travel_options:  \n- preferred_mode: [private_transport, cab]  \n\ncrowd_monitor:  \n- location_name: [golconda fort]  \n\nhistorical_info:  \n- site_name: [golconda fort]",
       "final_summary": "Based on our discussion, your plan includes a thorough exploration of Golconda Fort. To get there, I recommend using private transport or a cab for convenience. \n\nYou can start your visit at around 10:00 AM, allowing approximately 2 hours to explore the fort's historical significance and stunning architecture. \n\nAfter your visit, around 12:00 PM, you can consider heading to a nearby restaurant for lunch. I can help find a suitable dining option based on your cuisine preference. \n\nThis plan keeps your activities within a 3-hour timeframe, ensuring a focused and enjoyable experience at Golconda Fort.",
@@ -3387,9 +3976,22 @@
       ],
       "original_goal": "Planning to visit GVK One for some shopping. Is it usually very crowded on weekdays?",
       "goal_category": "concrete",
-      "expected_services": [
-        "crowd_monitor",
-        "travel_options"
+      "expected_services_with_params": [
+        {
+          "crowd_monitor": {
+            "location_name": [
+              "gvk one"
+            ]
+          }
+        },
+        {
+          "travel_options": {
+            "preferred_mode": [
+              "metro",
+              "cab"
+            ]
+          }
+        }
       ],
       "core_services": "crowd_monitor:  \n- location_name: [gvk one]  \nrestaurant_finder:  \n- cuisine_type: [hyderabadi]  \n- dietary_restrictions: [vegetarian]",
       "final_summary": "Based on our discussion, your plan includes visiting GVK One for shopping, which is typically less crowded on weekdays, particularly in the morning hours. You can plan to arrive at GVK One around 10:00 AM to enjoy a more relaxed shopping experience. After shopping, you can consider having lunch at a nearby restaurant. A good option could be to explore some Hyderabadi cuisine in the vicinity, which you can easily find around 1:00 PM. This plan keeps you within a 5-hour timeframe, concluding your visit by around 3:00 PM.",
@@ -3474,9 +4076,25 @@
       ],
       "original_goal": "Would love to try some street food. Any areas famous for chaat and local snacks?",
       "goal_category": "concrete",
-      "expected_services": [
-        "restaurant_finder",
-        "crowd_monitor"
+      "expected_services_with_params": [
+        {
+          "restaurant_finder": {
+            "cuisine_type": [
+              "street food"
+            ],
+            "dietary_restrictions": [
+              "vegetarian"
+            ]
+          }
+        },
+        {
+          "crowd_monitor": {
+            "location_name": [
+              "charminar",
+              "laad bazaar"
+            ]
+          }
+        }
       ],
       "core_services": "restaurant_finder:  \n- cuisine_type: [street food]  \n- dietary_restrictions: []  \n\ncrowd_monitor:  \n- location_name: [laad bazaar, hussain sagar]",
       "final_summary": "Based on our discussion, your plan includes visiting Laad Bazaar and Hussain Sagar for some delicious street food. You can start your food adventure at Laad Bazaar, known for its vibrant atmosphere and variety of chaat and local snacks. Spend around 1.5 hours exploring the stalls and enjoying the food. \n\nAfter that, head to Hussain Sagar, where you can take a leisurely walk along the waterfront while savoring some more snacks. Allocate about 1.5 hours for this, enjoying the views and the local delicacies available from various vendors.\n\nIn total, your street food adventure will take approximately 3 hours, leaving you an additional hour for any travel time or spontaneous stops along the way. Enjoy your culinary journey through Hyderabad!",
@@ -3561,9 +4179,21 @@
       ],
       "original_goal": "I've heard Gandipet Lake is beautiful. How's the water quality there these days?",
       "goal_category": "concrete",
-      "expected_services": [
-        "water_quality",
-        "air_quality"
+      "expected_services_with_params": [
+        {
+          "water_quality": {
+            "water_body_name": [
+              "gandipet lake"
+            ]
+          }
+        },
+        {
+          "air_quality": {
+            "locations": [
+              "hyderabad"
+            ]
+          }
+        }
       ],
       "core_services": "water_quality:  \n- water_body_name: [gandipet lake]  \n\nrestaurant_finder:  \n- cuisine_type: [hyderabadi]  \n- dietary_restrictions: [vegetarian]",
       "final_summary": "Based on our discussion, your plan includes a visit to Gandipet Lake to enjoy the beautiful scenery and relax by the water. You can expect the water quality there to be monitored for safety. After spending about 1.5 hours at the lake, you can head to a nearby restaurant for a meal. I recommend trying some local Hyderabadi cuisine for an authentic experience. You can allocate another 1 to 1.5 hours for dining. This plan fits well within your 3-hour timeframe.",
@@ -3648,9 +4278,14 @@
       ],
       "original_goal": "Thinking of visiting Snow World. Is it usually very crowded?",
       "goal_category": "concrete",
-      "expected_services": [
-        "ticket_purchase",
-        "crowd_monitor"
+      "expected_services_with_params": [
+        {
+          "ticket_purchase": {
+            "ticket_type": [
+              "theme_park"
+            ]
+          }
+        }
       ],
       "core_services": "crowd_monitor:  \n- location_name: [inorbit mall, gvk one]  \nticket_purchase:  \n- ticket_type: [snow world]",
       "final_summary": "Based on our discussion, your plan includes visiting Snow World for an exciting experience. To ensure a smooth visit, I will check the current crowd levels at Snow World before you go. Assuming you plan to spend around 2 hours there, you can arrive by 10:00 AM and enjoy the attractions until 12:00 PM. Afterward, if you wish, you can have lunch at a nearby restaurant to conclude your 4-hour outing. Please let me know if you'd like to proceed with the crowd monitoring or ticket purchase for Snow World!",
@@ -3735,8 +4370,17 @@
       ],
       "original_goal": "Looking for a good place serving traditional Irani chai and Osmania biscuits!",
       "goal_category": "concrete",
-      "expected_services": [
-        "restaurant_finder"
+      "expected_services_with_params": [
+        {
+          "restaurant_finder": {
+            "cuisine_type": [
+              "irani"
+            ],
+            "dietary_restrictions": [
+              "vegetarian"
+            ]
+          }
+        }
       ],
       "core_services": "restaurant_finder:  \n  - cuisine_type: [irani]  \n  - dietary_restrictions: []  \ncrowd_monitor:  \n  - location_name: [charminar, laad bazaar]",
       "final_summary": "Based on our discussion, your plan includes visiting a traditional Irani café to enjoy Irani chai and Osmania biscuits. I recommend heading to the famous Café Niloufer, which is known for its authentic offerings. You can plan to spend approximately 1 hour there, enjoying your tea and biscuits.\n\nAfter that, you can take a short walk to the nearby Laad Bazaar, which is well-known for its beautiful bangles and traditional Hyderabadi handicrafts. This visit can take around 1.5 hours, allowing you to explore and shop.\n\nFinally, if time permits, you can visit the iconic Charminar, which is approximately a 10-minute walk from Laad Bazaar. You can spend about 1 hour here, soaking in the historical architecture and vibrant atmosphere.\n\nThis plan keeps your activities within 4 hours while ensuring you enjoy the traditional flavors of Hyderabad!",
@@ -3821,9 +4465,23 @@
       ],
       "original_goal": "Are there any cultural exhibitions happening in the city? Particularly interested in traditional art.",
       "goal_category": "concrete",
-      "expected_services": [
-        "exhibition_tracker",
-        "ticket_purchase"
+      "expected_services_with_params": [
+        {
+          "exhibition_tracker": {
+            "exhibition_type": [
+              "art",
+              "cultural",
+              "traditional"
+            ]
+          }
+        },
+        {
+          "ticket_purchase": {
+            "ticket_type": [
+              "museum"
+            ]
+          }
+        }
       ],
       "core_services": "exhibition_tracker:  \n- exhibition_type: [cultural, traditional]  \n\nhistorical_info:  \n- site_name: [salar jung museum, qutub shahi tombs]  \n\ncrowd_monitor:  \n- location_name: [salar jung museum, qutub shahi tombs]",
       "final_summary": "Based on our discussion, your plan includes visiting a cultural exhibition showcasing traditional art in Hyderabad. You can visit the Salar Jung Museum, which is known for its rich collection of historical artifacts and art pieces, including traditional Indian art. This visit can take approximately 1.5 hours. Following this, you may want to explore the Qutub Shahi Tombs, which also feature beautiful architecture and historical significance related to traditional art and culture. This visit will take about 1 hour. This itinerary fits well within your 3-hour time frame, allowing you to immerse yourself in Hyderabad's cultural heritage.",
@@ -3908,8 +4566,15 @@
       ],
       "original_goal": "Any photography exhibitions or galleries worth visiting this week?",
       "goal_category": "concrete",
-      "expected_services": [
-        "exhibition_tracker"
+      "expected_services_with_params": [
+        {
+          "exhibition_tracker": {
+            "exhibition_type": [
+              "photography",
+              "art"
+            ]
+          }
+        }
       ],
       "core_services": "exhibition_tracker:  \n- exhibition_type: [photography]  \n\nhistorical_info:  \n- site_name: [salar jung museum]  \n\ncrowd_monitor:  \n- location_name: [salar jung museum]",
       "final_summary": "Based on our discussion, your plan includes visiting a photography exhibition at a local gallery this week. You can allocate approximately 2 hours for this visit. After the exhibition, you can spend another 1-2 hours exploring nearby historical sites, such as the Salar Jung Museum, which is renowned for its vast collection of art and artifacts. This plan keeps you within the 4-hour timeframe and allows for a delightful exploration of both contemporary photography and historical treasures in Hyderabad.",
@@ -3994,8 +4659,17 @@
       ],
       "original_goal": "Looking for a good place serving traditional Irani chai and Osmania biscuits!",
       "goal_category": "concrete",
-      "expected_services": [
-        "restaurant_finder"
+      "expected_services_with_params": [
+        {
+          "restaurant_finder": {
+            "cuisine_type": [
+              "irani"
+            ],
+            "dietary_restrictions": [
+              "vegetarian"
+            ]
+          }
+        }
       ],
       "core_services": "restaurant_finder:  \n- cuisine_type: [irani]  \n- dietary_restrictions: []  \n\ncrowd_monitor:  \n- location_name: [charminar, laad bazaar]",
       "final_summary": "Based on our discussion, your plan includes visiting a traditional Irani café to enjoy Irani chai and Osmania biscuits. I recommend starting your visit at around 3:00 PM, as this will give you enough time to savor the flavors and experience the ambiance of the café. Afterward, you could explore the nearby Laad Bazaar, which is a great place to shop for traditional bangles and handicrafts, allowing for a perfect blend of culture and leisure. This will keep your activities within a 5-hour timeframe, finishing around 8:00 PM.",
@@ -4080,9 +4754,21 @@
       ],
       "original_goal": "Would love to enjoy the sunset at Tank Bund. Is it usually very crowded in the evenings?",
       "goal_category": "concrete",
-      "expected_services": [
-        "water_quality",
-        "crowd_monitor"
+      "expected_services_with_params": [
+        {
+          "water_quality": {
+            "water_body_name": [
+              "hussain sagar"
+            ]
+          }
+        },
+        {
+          "crowd_monitor": {
+            "location_name": [
+              "tank bund"
+            ]
+          }
+        }
       ],
       "core_services": "crowd_monitor:  \n- location_name: [tank bund]  \n\nrestaurant_finder:  \n- cuisine_type: [hyderabadi]  \n- dietary_restrictions: [vegetarian]",
       "final_summary": "Based on our discussion, your plan includes visiting Tank Bund to enjoy the sunset. Typically, Tank Bund can get quite crowded in the evenings, so it's advisable to arrive early to secure a good spot. \n\nYou can plan to arrive at Tank Bund around 5:30 PM to enjoy the views as the sun sets around 6:00 PM. Before heading to Tank Bund, you could consider having dinner at a nearby restaurant. Given your preferences, you might enjoy some local Hyderabadi cuisine, which you can plan to do around 7:00 PM. \n\nIn summary, your timeline would look like this:\n- 5:30 PM: Arrive at Tank Bund\n- 6:00 PM: Enjoy the sunset\n- 7:00 PM: Dinner at a nearby restaurant\n\nThis plan keeps you engaged within the 5-hour window while enjoying the beauty of the city.",
@@ -4167,9 +4853,21 @@
       ],
       "original_goal": "Would love to enjoy the sunset at Tank Bund. Is it usually very crowded in the evenings?",
       "goal_category": "concrete",
-      "expected_services": [
-        "water_quality",
-        "crowd_monitor"
+      "expected_services_with_params": [
+        {
+          "water_quality": {
+            "water_body_name": [
+              "hussain sagar"
+            ]
+          }
+        },
+        {
+          "crowd_monitor": {
+            "location_name": [
+              "tank bund"
+            ]
+          }
+        }
       ],
       "core_services": "crowd_monitor:  \n- location_name: [tank bund]  \n\nrestaurant_finder:  \n- cuisine_type: [hyderabadi]  \n- dietary_restrictions: [vegetarian]  \n\ntravel_options:  \n- preferred_mode: [walk, cab]",
       "final_summary": "Based on our discussion, your plan includes enjoying the sunset at Tank Bund, which typically offers a scenic view during the evening hours. It's worth noting that Tank Bund can be quite crowded during sunset, so arriving early is advisable to secure a good spot. You can plan to be there around 5:30 PM to enjoy the view, and stay until around 7 PM when the sun sets. Additionally, for a pleasant dining option nearby afterward, I recommend exploring local restaurants that serve Hyderabadi cuisine. You can arrive at the restaurant by either walking or taking a short cab ride from Tank Bund to ensure you make the most of your evening.",
@@ -4254,10 +4952,32 @@
       ],
       "original_goal": "Love those bustling market vibes, you know? Where locals shop and grab quick bites. That's my scene!",
       "goal_category": "ambiguous",
-      "expected_services": [
-        "crowd_monitor",
-        "restaurant_finder",
-        "travel_options"
+      "expected_services_with_params": [
+        {
+          "crowd_monitor": {
+            "location_name": [
+              "laad bazaar",
+              "charminar"
+            ]
+          }
+        },
+        {
+          "restaurant_finder": {
+            "cuisine_type": [
+              "street food"
+            ],
+            "dietary_restrictions": [
+              "vegetarian"
+            ]
+          }
+        },
+        {
+          "travel_options": {
+            "preferred_mode": [
+              "auto_rickshaw"
+            ]
+          }
+        }
       ],
       "core_services": "restaurant_finder:  \n- cuisine_type: [street food]  \n- dietary_restrictions: [vegetarian]  \n\ncrowd_monitor:  \n- location_name: [laad bazaar, charminar]  \n\nhistorical_info:  \n- site_name: [mecca masjid]",
       "final_summary": "Based on our discussion, your plan includes visiting Laad Bazaar, where you can immerse yourself in the bustling market vibes, shop for traditional bangles, and enjoy the local atmosphere. You can allocate about 1 hour for exploring the market and making some purchases. After that, you can head to a nearby street food stall to savor local delicacies, which should take around 30 minutes. Finally, you can spend about 30 minutes at the nearby Mecca Masjid, taking in its stunning architecture and the vibrant local scene. This plan allows you to experience the lively market culture and indulge in quick bites within a 2-hour timeframe.",
@@ -4342,10 +5062,37 @@
       ],
       "original_goal": "The Golconda Fort sounds fascinating! I'd like to explore it thoroughly. What's the best way to get there?",
       "goal_category": "concrete",
-      "expected_services": [
-        "historical_info",
-        "crowd_monitor",
-        "ticket_purchase"
+      "expected_services_with_params": [
+        {
+          "historical_info": {
+            "site_name": [
+              "golconda fort"
+            ]
+          }
+        },
+        {
+          "crowd_monitor": {
+            "location_name": [
+              "golconda fort"
+            ]
+          }
+        },
+        {
+          "ticket_purchase": {
+            "ticket_type": [
+              "monument"
+            ]
+          }
+        },
+        {
+          "travel_options": {
+            "preferred_mode": [
+              "private_transport",
+              "auto_rickshaw",
+              "cab"
+            ]
+          }
+        }
       ],
       "core_services": "travel_options:  \n- preferred_mode: [private_transport]  \n\nhistorical_info:  \n- site_name: [golconda fort]  \n\nticket_purchase:  \n- ticket_type: [monument]",
       "final_summary": "Based on our discussion, your plan includes a thorough exploration of Golconda Fort. Here’s how you can structure your visit within 5 hours:\n\n1. **Travel to Golconda Fort**: I recommend taking a private transport option to ensure a comfortable ride directly to the fort. It should take around 30 minutes to reach from the city center.\n\n2. **Historical Exploration**: Spend approximately 2 hours at Golconda Fort, where you can explore its fascinating history, magnificent architecture, and enjoy panoramic views of the city from the top.\n\n3. **Ticket Purchase**: Ensure you purchase your entry tickets at the fort entrance. The ticketing process is generally quick, so you should allocate about 15 minutes for this.\n\n4. **Wrap-up**: After your exploration, you can enjoy a light snack or beverage at a nearby café, allowing for about 1 hour of relaxation before heading back.\n\nIn total, this plan will keep you engaged for about 4 hours, allowing for a comfortable pace and time to appreciate the site's beauty and history. Enjoy your visit to Golconda Fort!",
@@ -4430,10 +5177,32 @@
       ],
       "original_goal": "Love those bustling market vibes, you know? Where locals shop and grab quick bites. That's my scene!",
       "goal_category": "ambiguous",
-      "expected_services": [
-        "crowd_monitor",
-        "restaurant_finder",
-        "travel_options"
+      "expected_services_with_params": [
+        {
+          "crowd_monitor": {
+            "location_name": [
+              "laad bazaar",
+              "charminar"
+            ]
+          }
+        },
+        {
+          "restaurant_finder": {
+            "cuisine_type": [
+              "street food"
+            ],
+            "dietary_restrictions": [
+              "vegetarian"
+            ]
+          }
+        },
+        {
+          "travel_options": {
+            "preferred_mode": [
+              "auto_rickshaw"
+            ]
+          }
+        }
       ],
       "core_services": "restaurant_finder:  \n- cuisine_type: [street food, hyderabadi]  \n- dietary_restrictions: []  \n\ncrowd_monitor:  \n- location_name: [charminar, laad bazaar]  \n\nhistorical_info:  \n- site_name: [charminar]",
       "final_summary": "Based on our discussion, your plan includes visiting the bustling Laad Bazaar, known for its vibrant market atmosphere and traditional Hyderabadi bangles. You can spend about 1 hour exploring the shops and enjoying the local vibe. Next, you'll head to a nearby street food stall to grab a quick bite of local delicacies, allowing for around 30 minutes to savor the flavors. Finally, you can visit the historic Charminar, where you can take in the architecture and culture for about 1 hour. This itinerary keeps you engaged with the local market scene and fits comfortably within a 3-hour timeframe.",
@@ -4518,10 +5287,37 @@
       ],
       "original_goal": "The Golconda Fort sounds fascinating! I'd like to explore it thoroughly. What's the best way to get there?",
       "goal_category": "concrete",
-      "expected_services": [
-        "historical_info",
-        "crowd_monitor",
-        "ticket_purchase"
+      "expected_services_with_params": [
+        {
+          "historical_info": {
+            "site_name": [
+              "golconda fort"
+            ]
+          }
+        },
+        {
+          "crowd_monitor": {
+            "location_name": [
+              "golconda fort"
+            ]
+          }
+        },
+        {
+          "ticket_purchase": {
+            "ticket_type": [
+              "monument"
+            ]
+          }
+        },
+        {
+          "travel_options": {
+            "preferred_mode": [
+              "private_transport",
+              "auto_rickshaw",
+              "cab"
+            ]
+          }
+        }
       ],
       "core_services": "travel_options:  \n- preferred_mode: [private_transport]  \n\ncrowd_monitor:  \n- location_name: [golconda fort]  \n\nhistorical_info:  \n- site_name: [golconda fort]",
       "final_summary": "Based on our discussion, your plan includes visiting Golconda Fort. To get there, the best option is to use private transport, which will allow you to travel comfortably and reach your destination efficiently. \n\nOnce you arrive at Golconda Fort, you can spend about 1.5 to 2 hours exploring the historical site, which is known for its stunning architecture and rich history. I recommend starting your visit around 10:00 AM to avoid the midday heat.\n\nAfter your exploration, you can head to a nearby restaurant for lunch. A great option would be to try some authentic Hyderabadi cuisine, which you can enjoy at a local restaurant. Allocate about 1 to 1.5 hours for lunch, so you can unwind and relish the flavors.\n\nIn total, this plan keeps you within a 4-hour timeframe, starting your visit at Golconda Fort and concluding with a delightful meal. Enjoy your visit!",
@@ -4606,9 +5402,14 @@
       ],
       "original_goal": "Thinking of visiting Snow World. Is it usually very crowded?",
       "goal_category": "concrete",
-      "expected_services": [
-        "ticket_purchase",
-        "crowd_monitor"
+      "expected_services_with_params": [
+        {
+          "ticket_purchase": {
+            "ticket_type": [
+              "theme_park"
+            ]
+          }
+        }
       ],
       "core_services": "crowd_monitor:  \n- location_name: [snow world]  \nticket_purchase:  \n- ticket_type: [snow world]",
       "final_summary": "Based on our discussion, your plan includes visiting Snow World. I will first check the current crowd levels at Snow World to ensure a pleasant experience. Depending on the crowd levels, we can plan your visit accordingly. \n\nIf the crowd is manageable, I recommend spending about 2-3 hours at Snow World enjoying the various snow activities. Following your time at Snow World, we can also consider purchasing tickets for any specific attractions you might want to visit afterward, ensuring that your total time commitment remains within 5 hours. \n\nLet me know if you would like me to proceed with the crowd monitoring at Snow World!",
@@ -4693,9 +5494,21 @@
       ],
       "original_goal": "I'm thinking of spending some time near Hussain Sagar Lake. How clean is the water there?",
       "goal_category": "concrete",
-      "expected_services": [
-        "water_quality",
-        "air_quality"
+      "expected_services_with_params": [
+        {
+          "water_quality": {
+            "water_body_name": [
+              "hussain sagar"
+            ]
+          }
+        },
+        {
+          "air_quality": {
+            "locations": [
+              "hyderabad"
+            ]
+          }
+        }
       ],
       "core_services": "water_quality:  \n- water_body_name: [hussain sagar]  \n\ntravel_options:  \n- preferred_mode: [walk]  \n\ncrowd_monitor:  \n- location_name: [hussain sagar]",
       "final_summary": "Based on our discussion, your plan includes spending some time near Hussain Sagar Lake. You were interested in checking the water quality there, and I can provide you with the latest information on that. Additionally, I can suggest enjoying a leisurely walk along the lake and taking in the sights, which should take about 1 hour. After your walk, you could visit a nearby café for refreshments, allowing for another hour of relaxation. Overall, this plan fits well within your 2-hour timeframe, focusing on enjoying the beautiful surroundings of Hussain Sagar Lake while ensuring the cleanliness of the water.",
@@ -4780,9 +5593,22 @@
       ],
       "original_goal": "Planning to visit GVK One for some shopping. Is it usually very crowded on weekdays?",
       "goal_category": "concrete",
-      "expected_services": [
-        "crowd_monitor",
-        "travel_options"
+      "expected_services_with_params": [
+        {
+          "crowd_monitor": {
+            "location_name": [
+              "gvk one"
+            ]
+          }
+        },
+        {
+          "travel_options": {
+            "preferred_mode": [
+              "metro",
+              "cab"
+            ]
+          }
+        }
       ],
       "core_services": "crowd_monitor:  \n- location_name: [gvk one]  \n\nrestaurant_finder:  \n- cuisine_type: []  \n- dietary_restrictions: []",
       "final_summary": "Based on our discussion, your plan includes visiting GVK One for some shopping. It typically experiences moderate crowd levels on weekdays, making it a suitable time to explore the mall without feeling overwhelmed. You may want to allocate around 2 hours for shopping. \n\nFollowing that, you can enjoy a meal at a nearby restaurant. I can help you find a restaurant based on your preferred cuisine and dietary restrictions. You can spend around 1 hour for dining. \n\nThis brings your total activity time to approximately 3 hours, allowing you a comfortable 1-hour buffer for travel and any other unexpected delays.",
@@ -4867,8 +5693,15 @@
       ],
       "original_goal": "Any photography exhibitions or galleries worth visiting this week?",
       "goal_category": "concrete",
-      "expected_services": [
-        "exhibition_tracker"
+      "expected_services_with_params": [
+        {
+          "exhibition_tracker": {
+            "exhibition_type": [
+              "photography",
+              "art"
+            ]
+          }
+        }
       ],
       "core_services": "exhibition_tracker:  \n- exhibition_type: [photography]  \n\nticket_purchase:  \n- ticket_type: [museum]  \n\nhistorical_info:  \n- site_name: [salar jung museum]",
       "final_summary": "Based on our discussion, your plan includes visiting a photography exhibition this week. You can spend about 1.5 hours at the exhibition, which will provide you with an engaging experience in visual storytelling. Following that, you can explore the Salar Jung Museum for about 1.5 hours, where you can appreciate its historical artifacts and art collections. This plan fits well within your 3-hour time constraint and offers a blend of cultural and artistic experiences.",
@@ -4953,9 +5786,21 @@
       ],
       "original_goal": "I'd love to visit Charminar and understand its history. Wonder if it gets too crowded on weekends?",
       "goal_category": "concrete",
-      "expected_services": [
-        "historical_info",
-        "crowd_monitor"
+      "expected_services_with_params": [
+        {
+          "historical_info": {
+            "site_name": [
+              "charminar"
+            ]
+          }
+        },
+        {
+          "crowd_monitor": {
+            "location_name": [
+              "charminar"
+            ]
+          }
+        }
       ],
       "core_services": "crowd_monitor:  \n- location_name: [charminar, laad bazaar]  \n\nhistorical_info:  \n- site_name: [charminar]",
       "final_summary": "Based on our discussion, your plan includes visiting Charminar to explore its historical significance. You will want to check the crowd levels, especially since you're considering visiting on a weekend. \n\nTo make the most of your time, you could allocate 1 hour for your visit to Charminar, which will allow you to appreciate its architecture and learn about its history. After that, you can spend approximately 30 minutes monitoring the crowd levels in the area to determine the best time for your visit. \n\nOverall, this itinerary fits well within your 3-hour time frame, giving you a focused experience at Charminar while ensuring you are aware of the crowd conditions.",
@@ -5040,9 +5885,21 @@
       ],
       "original_goal": "The Qutub Shahi Tombs look beautiful in photos. How can I plan a visit there?",
       "goal_category": "concrete",
-      "expected_services": [
-        "historical_info",
-        "crowd_monitor"
+      "expected_services_with_params": [
+        {
+          "historical_info": {
+            "site_name": [
+              "qutub shahi tombs"
+            ]
+          }
+        },
+        {
+          "crowd_monitor": {
+            "location_name": [
+              "golconda fort"
+            ]
+          }
+        }
       ],
       "core_services": "historical_info:  \n- site_name: [qutub shahi tombs]  \n\ntravel_options:  \n- preferred_mode: [walk, public_transport, private_transport, auto_rickshaw, cab]  \n\nrestaurant_finder:  \n- cuisine_type: [hyderabadi]  \n- dietary_restrictions: []  \n\ncrowd_monitor:  \n- location_name: [qutub shahi tombs]",
       "final_summary": "Based on our discussion, your plan includes a visit to the Qutub Shahi Tombs. You can start your visit at around 10:00 AM. Spend about 1 hour exploring the tombs, which are known for their stunning architecture and historical significance. Afterward, you could head to a nearby restaurant for lunch, ideally around 11:30 AM, where you can enjoy some authentic Hyderabadi cuisine. This plan keeps you within a 2-hour window, allowing you to appreciate the beauty of the tombs and enjoy a local meal.",
@@ -5127,10 +5984,34 @@
       ],
       "original_goal": "History nerd but also a foodie. Want to explore places that tell a story while munching on local specialties!",
       "goal_category": "ambiguous",
-      "expected_services": [
-        "historical_info",
-        "restaurant_finder",
-        "exhibition_tracker"
+      "expected_services_with_params": [
+        {
+          "historical_info": {
+            "site_name": [
+              "charminar",
+              "golconda fort"
+            ]
+          }
+        },
+        {
+          "restaurant_finder": {
+            "cuisine_type": [
+              "hyderabadi",
+              "street food"
+            ],
+            "dietary_restrictions": [
+              "vegetarian",
+              "non_veg"
+            ]
+          }
+        },
+        {
+          "exhibition_tracker": {
+            "exhibition_type": [
+              "historical"
+            ]
+          }
+        }
       ],
       "core_services": "restaurant_finder:  \n- cuisine_type: [hyderabadi, street food]  \n- dietary_restrictions: []  \n\ncrowd_monitor:  \n- location_name: [charminar, laad bazaar]  \n\nhistorical_info:  \n- site_name: [charminar]",
       "final_summary": "Based on our discussion, your plan includes visiting the Charminar and enjoying some local Hyderabadi street food nearby. You can allocate around 1 hour to explore the historical significance of Charminar and its stunning architecture from 10:00 AM to 11:00 AM. Afterward, from 11:00 AM to 12:00 PM, you can indulge in some delicious local specialties at nearby street food stalls, where you can try items like Irani chai and kebabs. This plan allows you to immerse yourself in Hyderabad's rich history while savoring its culinary delights, all within a 3-hour timeframe.",
@@ -5215,9 +6096,21 @@
       ],
       "original_goal": "I'm thinking of spending some time near Hussain Sagar Lake. How clean is the water there?",
       "goal_category": "concrete",
-      "expected_services": [
-        "water_quality",
-        "air_quality"
+      "expected_services_with_params": [
+        {
+          "water_quality": {
+            "water_body_name": [
+              "hussain sagar"
+            ]
+          }
+        },
+        {
+          "air_quality": {
+            "locations": [
+              "hyderabad"
+            ]
+          }
+        }
       ],
       "core_services": "water_quality:  \n- water_body_name: [hussain sagar]  \n\nrestaurant_finder:  \n- cuisine_type: [hyderabadi]  \n- dietary_restrictions: [vegetarian, non_veg]",
       "final_summary": "Based on our discussion, your plan includes spending some time near Hussain Sagar Lake. You will first check the water quality at Hussain Sagar to ensure it's suitable for your visit. Following that, you can enjoy a meal at a nearby restaurant, where you can explore the local Hyderabadi cuisine. Aim to complete this plan within 2 hours, with approximately 30 minutes allocated for checking water quality and 1 hour and 30 minutes for dining and enjoying the surroundings.",
@@ -5302,9 +6195,22 @@
       ],
       "original_goal": "Planning to visit GVK One for some shopping. Is it usually very crowded on weekdays?",
       "goal_category": "concrete",
-      "expected_services": [
-        "crowd_monitor",
-        "travel_options"
+      "expected_services_with_params": [
+        {
+          "crowd_monitor": {
+            "location_name": [
+              "gvk one"
+            ]
+          }
+        },
+        {
+          "travel_options": {
+            "preferred_mode": [
+              "metro",
+              "cab"
+            ]
+          }
+        }
       ],
       "core_services": "crowd_monitor:  \n- location_name: [gvk one]  \nrestaurant_finder:  \n- cuisine_type: [hyderabadi, south indian]  \n- dietary_restrictions: [vegetarian]",
       "final_summary": "Based on our discussion, your plan includes visiting GVK One for some shopping. It's best to check the crowd levels during your visit, especially since you're considering a weekday. You can expect moderate crowds during weekdays, but it’s advisable to visit during the late morning or early afternoon for a more leisurely experience. \n\nIf you plan to spend around 2 hours shopping, you could allocate an additional hour for lunch at a nearby restaurant, allowing you to enjoy the local cuisine. Therefore, your total time would be approximately 3 hours. \n\nIf you have any more time left, you can consider visiting a café for a quick coffee or dessert before heading out. This would keep your activities within the 5-hour limit while providing a satisfying shopping and dining experience.",
@@ -5389,10 +6295,34 @@
       ],
       "original_goal": "History nerd but also a foodie. Want to explore places that tell a story while munching on local specialties!",
       "goal_category": "ambiguous",
-      "expected_services": [
-        "historical_info",
-        "restaurant_finder",
-        "exhibition_tracker"
+      "expected_services_with_params": [
+        {
+          "historical_info": {
+            "site_name": [
+              "charminar",
+              "golconda fort"
+            ]
+          }
+        },
+        {
+          "restaurant_finder": {
+            "cuisine_type": [
+              "hyderabadi",
+              "street food"
+            ],
+            "dietary_restrictions": [
+              "vegetarian",
+              "non_veg"
+            ]
+          }
+        },
+        {
+          "exhibition_tracker": {
+            "exhibition_type": [
+              "historical"
+            ]
+          }
+        }
       ],
       "core_services": "restaurant_finder:  \n- cuisine_type: [hyderabadi, irani]  \n- dietary_restrictions: []  \n  \ncrowd_monitor:  \n- location_name: [charminar, laad bazaar]  \n  \nhistorical_info:  \n- site_name: [charminar, golconda fort]",
       "final_summary": "Based on our discussion, your plan includes visiting the Charminar and Golconda Fort, both of which are rich in history and storytelling. \n\n1. **Charminar** (1.5 hours) - Start your exploration here, soaking in the architectural beauty and historical significance of this iconic monument. Don't forget to take some pictures!\n\n2. **Lunch at Laad Bazaar** (1 hour) - After visiting Charminar, head to Laad Bazaar, which is nearby. You can indulge in some local specialties like Hyderabadi Biryani or Irani Chai.\n\n3. **Golconda Fort** (2 hours) - Post-lunch, make your way to Golconda Fort. Spend time exploring the fort's impressive structures and learning about its history. The sound and light show in the evening can also be a highlight if time permits.\n\nThis plan keeps you engaged with historical sites while savoring local cuisine, all within a 5-hour timeframe. Enjoy your trip!",
@@ -5477,9 +6407,21 @@
       ],
       "original_goal": "I'd love to visit Charminar and understand its history. Wonder if it gets too crowded on weekends?",
       "goal_category": "concrete",
-      "expected_services": [
-        "historical_info",
-        "crowd_monitor"
+      "expected_services_with_params": [
+        {
+          "historical_info": {
+            "site_name": [
+              "charminar"
+            ]
+          }
+        },
+        {
+          "crowd_monitor": {
+            "location_name": [
+              "charminar"
+            ]
+          }
+        }
       ],
       "core_services": "crowd_monitor:  \n- location_name: [charminar, laad bazaar]  \n\nhistorical_info:  \n- site_name: [charminar]",
       "final_summary": "Based on our discussion, your plan includes visiting Charminar to explore its rich history. It is advisable to check the crowd levels, as weekends tend to attract more visitors. You can allocate about 1-2 hours for the visit to Charminar, including time for photography and exploration. \n\nAfter Charminar, you may want to take a short walk to Laad Bazaar, which is nearby, and spend about 1 hour browsing the shops for traditional bangles and souvenirs. This brings your total time to about 3 hours, leaving you with some flexibility for transportation and any additional activities you might want to include within your 5-hour window.",
@@ -5564,9 +6506,30 @@
       ],
       "original_goal": "I'm really interested in visiting Salar Jung Museum. Do they have any special exhibitions going on?",
       "goal_category": "concrete",
-      "expected_services": [
-        "historical_info",
-        "exhibition_tracker"
+      "expected_services_with_params": [
+        {
+          "historical_info": {
+            "site_name": [
+              "salar jung museum"
+            ]
+          }
+        },
+        {
+          "exhibition_tracker": {
+            "exhibition_type": [
+              "art",
+              "historical",
+              "cultural"
+            ]
+          }
+        },
+        {
+          "ticket_purchase": {
+            "ticket_type": [
+              "museum"
+            ]
+          }
+        }
       ],
       "core_services": "exhibition_tracker:  \n- exhibition_type: [art, historical, cultural]  \n\ntravel_options:  \n- preferred_mode: [public_transport, cab]",
       "final_summary": "Based on our discussion, your plan includes visiting the Salar Jung Museum, which is known for its impressive collection of art and artifacts. You can check for any special exhibitions currently taking place at the museum. \n\nFor your visit, I recommend allocating around 2 hours to explore the museum thoroughly. You can arrive at the museum by using public transport or a cab, which will take approximately 30 minutes from the city center, allowing time for transportation. \n\nIn total, this plan fits well within your 3-hour time constraint, giving you a rich cultural experience while ensuring you have sufficient time to travel.",
@@ -5651,10 +6614,31 @@
       ],
       "original_goal": "First time in Hyderabad! Want to start with the locals' favorites, not the tourist checklist.",
       "goal_category": "ambiguous",
-      "expected_services": [
-        "restaurant_finder",
-        "crowd_monitor",
-        "travel_options"
+      "expected_services_with_params": [
+        {
+          "restaurant_finder": {
+            "cuisine_type": [
+              "hyderabadi",
+              "street food"
+            ]
+          }
+        },
+        {
+          "crowd_monitor": {
+            "location_name": [
+              "charminar",
+              "laad bazaar"
+            ]
+          }
+        },
+        {
+          "travel_options": {
+            "preferred_mode": [
+              "auto_rickshaw",
+              "private_transport"
+            ]
+          }
+        }
       ],
       "core_services": "restaurant_finder:  \n- cuisine_type: [hyderabadi, south indian]  \n- dietary_restrictions: [vegetarian]  \n\ncrowd_monitor:  \n- location_name: [charminar, laad bazaar]  \n\nhistorical_info:  \n- site_name: [charminar, salar jung museum]",
       "final_summary": "Based on our discussion, your plan includes visiting the iconic Charminar for about 1 hour to admire its architecture and explore the surrounding local market. After that, you can head to Laad Bazaar, which is known for its vibrant atmosphere and traditional bangles, spending approximately 1.5 hours there. \n\nFor lunch, I recommend trying some authentic Hyderabadi cuisine at a local restaurant, which should take around 1 hour. If time permits, you can visit the historic Salar Jung Museum for about 1.5 hours to appreciate its extensive collection of art and artifacts. \n\nIn total, this itinerary fits comfortably within your 5-hour timeframe while allowing you to experience the local favorites of Hyderabad.",
@@ -5739,10 +6723,32 @@
       ],
       "original_goal": "Love those bustling market vibes, you know? Where locals shop and grab quick bites. That's my scene!",
       "goal_category": "ambiguous",
-      "expected_services": [
-        "crowd_monitor",
-        "restaurant_finder",
-        "travel_options"
+      "expected_services_with_params": [
+        {
+          "crowd_monitor": {
+            "location_name": [
+              "laad bazaar",
+              "charminar"
+            ]
+          }
+        },
+        {
+          "restaurant_finder": {
+            "cuisine_type": [
+              "street food"
+            ],
+            "dietary_restrictions": [
+              "vegetarian"
+            ]
+          }
+        },
+        {
+          "travel_options": {
+            "preferred_mode": [
+              "auto_rickshaw"
+            ]
+          }
+        }
       ],
       "core_services": "restaurant_finder:  \n- cuisine_type: [south indian, hyderabadi]  \n- dietary_restrictions: [vegetarian]  \n\ncrowd_monitor:  \n- location_name: [charminar, laad bazaar]",
       "final_summary": "Based on our discussion, your plan includes exploring the vibrant Laad Bazaar for about 1 hour, where you can enjoy the bustling market vibes and shop for traditional bangles and local handicrafts. After that, you can head to the nearby Charminar area to soak in the atmosphere for another hour, where you can also grab quick bites from local street food vendors. Finally, you can allocate the last hour to visit a nearby café or restaurant that specializes in South Indian cuisine to relax and enjoy some local flavors. This plan allows you to experience the local shopping scene and food culture within a total of 3 hours.",
@@ -5827,8 +6833,17 @@
       ],
       "original_goal": "Looking for a good place serving traditional Irani chai and Osmania biscuits!",
       "goal_category": "concrete",
-      "expected_services": [
-        "restaurant_finder"
+      "expected_services_with_params": [
+        {
+          "restaurant_finder": {
+            "cuisine_type": [
+              "irani"
+            ],
+            "dietary_restrictions": [
+              "vegetarian"
+            ]
+          }
+        }
       ],
       "core_services": "restaurant_finder:  \n- cuisine_type: [irani]  \n- dietary_restrictions: []  \n\ntravel_options:  \n- preferred_mode: [private_transport]  \n\ncrowd_monitor:  \n- location_name: [charminar, laad bazaar]",
       "final_summary": "Based on our discussion, your plan includes visiting an Irani café to enjoy traditional Irani chai and Osmania biscuits. You can choose to head to a popular café like Café Niloufer or Shah Ghouse Café, both known for their delicious offerings. \n\nFor your visit, consider taking a private transport option for convenience, which should take approximately 15-20 minutes depending on your location. Allocate about 1 hour to relax and savor your chai and biscuits at the café. \n\nThis gives you a total of around 1.5-2 hours for your café visit, allowing you some extra time for travel or to enjoy the ambiance. Enjoy your time tasting the local flavors!",
@@ -5913,10 +6928,31 @@
       ],
       "original_goal": "First time in Hyderabad! Want to start with the locals' favorites, not the tourist checklist.",
       "goal_category": "ambiguous",
-      "expected_services": [
-        "restaurant_finder",
-        "crowd_monitor",
-        "travel_options"
+      "expected_services_with_params": [
+        {
+          "restaurant_finder": {
+            "cuisine_type": [
+              "hyderabadi",
+              "street food"
+            ]
+          }
+        },
+        {
+          "crowd_monitor": {
+            "location_name": [
+              "charminar",
+              "laad bazaar"
+            ]
+          }
+        },
+        {
+          "travel_options": {
+            "preferred_mode": [
+              "auto_rickshaw",
+              "private_transport"
+            ]
+          }
+        }
       ],
       "core_services": "restaurant_finder:  \n- cuisine_type: [hyderabadi]  \n- dietary_restrictions: [vegetarian]  \n\ncrowd_monitor:  \n- location_name: [charminar, laad bazaar]  \n\ntravel_options:  \n- preferred_mode: [walk]",
       "final_summary": "Based on our discussion, your plan includes visiting the historic Charminar for approximately 30 minutes to immerse yourself in the local culture and admire its architecture. After that, you can take a short walk to the nearby Laad Bazaar, where you can spend about 30 minutes exploring the vibrant market known for its bangles and traditional crafts. Finally, you can enjoy a delicious lunch at a local Hyderabadi restaurant, which should take around 1 hour. This plan fits perfectly within your 2-hour timeframe, showcasing the locals' favorites in Hyderabad.",
@@ -6001,10 +7037,34 @@
       ],
       "original_goal": "History nerd but also a foodie. Want to explore places that tell a story while munching on local specialties!",
       "goal_category": "ambiguous",
-      "expected_services": [
-        "historical_info",
-        "restaurant_finder",
-        "exhibition_tracker"
+      "expected_services_with_params": [
+        {
+          "historical_info": {
+            "site_name": [
+              "charminar",
+              "golconda fort"
+            ]
+          }
+        },
+        {
+          "restaurant_finder": {
+            "cuisine_type": [
+              "hyderabadi",
+              "street food"
+            ],
+            "dietary_restrictions": [
+              "vegetarian",
+              "non_veg"
+            ]
+          }
+        },
+        {
+          "exhibition_tracker": {
+            "exhibition_type": [
+              "historical"
+            ]
+          }
+        }
       ],
       "core_services": "restaurant_finder:  \n- cuisine_type: [hyderabadi]  \n- dietary_restrictions: []  \n\ncrowd_monitor:  \n- location_name: [charminar, laad bazaar, mecca masjid]  \n\nhistorical_info:  \n- site_name: [charminar, mecca masjid]",
       "final_summary": "Based on our discussion, your plan includes visiting the historic Charminar and exploring the surrounding Laad Bazaar, known for its vibrant atmosphere and traditional bangles. You can allocate about 1.5 hours for this visit, from 10:00 AM to 11:30 AM. \n\nAfter that, you can enjoy some local specialties at a nearby restaurant that serves authentic Hyderabadi cuisine, such as biryani and kebabs. Plan for a leisurely lunch from 11:30 AM to 12:30 PM.\n\nFollowing your meal, you'll have around 1 hour to visit the nearby Mecca Masjid, one of the largest mosques in India, which is rich in history and architectural beauty. You can explore this magnificent site from 12:30 PM to 1:30 PM.\n\nThis plan allows you to immerse yourself in history while indulging in delicious local food, all within your 4-hour timeframe.",
@@ -6089,9 +7149,21 @@
       ],
       "original_goal": "I'm thinking of spending some time near Hussain Sagar Lake. How clean is the water there?",
       "goal_category": "concrete",
-      "expected_services": [
-        "water_quality",
-        "air_quality"
+      "expected_services_with_params": [
+        {
+          "water_quality": {
+            "water_body_name": [
+              "hussain sagar"
+            ]
+          }
+        },
+        {
+          "air_quality": {
+            "locations": [
+              "hyderabad"
+            ]
+          }
+        }
       ],
       "core_services": "water_quality:  \n- water_body_name: [hussain sagar]  \n\ntravel_options:  \n- preferred_mode: [walk]  \n\nrestaurant_finder:  \n- cuisine_type: [hyderabadi]  \n- dietary_restrictions: [vegetarian]",
       "final_summary": "Based on our discussion, your plan includes spending some time near Hussain Sagar Lake, where the water quality is quite good, making it suitable for enjoying the scenic beauty. You can spend approximately 1 hour walking along the lake and taking in the views. After that, you could head to a nearby restaurant for a meal, which should take around 1 to 1.5 hours. This plan keeps you well within your 3-hour time frame, allowing you to enjoy both the natural beauty of the lake and a delicious meal.",
@@ -6176,9 +7248,21 @@
       ],
       "original_goal": "Would love to visit Durgam Cheruvu for a peaceful evening. Is the area nice for walking?",
       "goal_category": "concrete",
-      "expected_services": [
-        "water_quality",
-        "air_quality"
+      "expected_services_with_params": [
+        {
+          "water_quality": {
+            "water_body_name": [
+              "durgam cheruvu"
+            ]
+          }
+        },
+        {
+          "air_quality": {
+            "locations": [
+              "hitec city"
+            ]
+          }
+        }
       ],
       "core_services": "travel_options:  \n- preferred_mode: [walk]  \n\ncrowd_monitor:  \n- location_name: [durgam cheruvu]  \n\nwater_quality:  \n- water_body_name: [durgam cheruvu]  \n\nrestaurant_finder:  \n- cuisine_type: [hyderabadi, south indian]  \n- dietary_restrictions: [vegetarian]",
       "final_summary": "Based on our discussion, your plan includes visiting Durgam Cheruvu for a peaceful evening. You can start your visit around 5:00 PM, enjoying a leisurely walk along the lakeside, which is known for its serene atmosphere and beautiful views. \n\nAfter your walk, you can consider dining at a nearby restaurant. If you prefer a specific cuisine, please let me know, and I can help you find a suitable restaurant within a reasonable distance from Durgam Cheruvu. You can plan to wrap up your evening by around 10:00 PM, allowing for a relaxed experience by the lake.",
@@ -6263,10 +7347,31 @@
       ],
       "original_goal": "First time in Hyderabad! Want to start with the locals' favorites, not the tourist checklist.",
       "goal_category": "ambiguous",
-      "expected_services": [
-        "restaurant_finder",
-        "crowd_monitor",
-        "travel_options"
+      "expected_services_with_params": [
+        {
+          "restaurant_finder": {
+            "cuisine_type": [
+              "hyderabadi",
+              "street food"
+            ]
+          }
+        },
+        {
+          "crowd_monitor": {
+            "location_name": [
+              "charminar",
+              "laad bazaar"
+            ]
+          }
+        },
+        {
+          "travel_options": {
+            "preferred_mode": [
+              "auto_rickshaw",
+              "private_transport"
+            ]
+          }
+        }
       ],
       "core_services": "restaurant_finder:  \n- cuisine_type: [hyderabadi]  \n- dietary_restrictions: [non_veg]  \n\ncrowd_monitor:  \n- location_name: [hussain sagar, laad bazaar]",
       "final_summary": "Based on our discussion, your plan includes visiting Hussain Sagar Lake for a serene early morning stroll from 8:00 AM to 9:30 AM, where you can enjoy the beautiful views and local atmosphere. Afterward, head to Laad Bazaar around 10:00 AM to 11:30 AM, a vibrant market known for its bangles and traditional handicrafts, allowing you to immerse yourself in local culture. For lunch, visit a recommended Hyderabadi restaurant from 11:30 AM to 12:30 PM, where you can savor authentic Hyderabadi biryani. This itinerary keeps you engaged with local favorites and fits well within your 5-hour timeframe.",
@@ -6351,9 +7456,21 @@
       ],
       "original_goal": "Would love to enjoy the sunset at Tank Bund. Is it usually very crowded in the evenings?",
       "goal_category": "concrete",
-      "expected_services": [
-        "water_quality",
-        "crowd_monitor"
+      "expected_services_with_params": [
+        {
+          "water_quality": {
+            "water_body_name": [
+              "hussain sagar"
+            ]
+          }
+        },
+        {
+          "crowd_monitor": {
+            "location_name": [
+              "tank bund"
+            ]
+          }
+        }
       ],
       "core_services": "crowd_monitor:  \n- location_name: [tank bund]  \n\ntravel_options:  \n- preferred_mode: [walk, public_transport, cab]",
       "final_summary": "Based on our discussion, your plan includes visiting Tank Bund to enjoy the sunset. Typically, Tank Bund can get quite crowded in the evenings, especially during weekends and holidays. To make the most of your 2-hour window, I suggest arriving at Tank Bund by 5:30 PM, giving you ample time to find a good spot to watch the sunset around 6:00 PM. You could also consider grabbing a quick bite at a nearby restaurant before heading to Tank Bund, which will help you avoid the rush.",
@@ -6438,9 +7555,30 @@
       ],
       "original_goal": "I'm really interested in visiting Salar Jung Museum. Do they have any special exhibitions going on?",
       "goal_category": "concrete",
-      "expected_services": [
-        "historical_info",
-        "exhibition_tracker"
+      "expected_services_with_params": [
+        {
+          "historical_info": {
+            "site_name": [
+              "salar jung museum"
+            ]
+          }
+        },
+        {
+          "exhibition_tracker": {
+            "exhibition_type": [
+              "art",
+              "historical",
+              "cultural"
+            ]
+          }
+        },
+        {
+          "ticket_purchase": {
+            "ticket_type": [
+              "museum"
+            ]
+          }
+        }
       ],
       "core_services": "exhibition_tracker:  \n- exhibition_type: [art, historical, cultural]  \n\nhistorical_info:  \n- site_name: [salar jung museum]  \n\nrestaurant_finder:  \n- cuisine_type: [hyderabadi]  \n- dietary_restrictions: [vegetarian, non_veg]",
       "final_summary": "Based on our discussion, your plan includes visiting the Salar Jung Museum, where you can explore their extensive collection of art and artifacts. I will check for any special exhibitions currently taking place at the museum. \n\nAssuming you have around 4 hours, you could allocate approximately 2 hours for the museum visit, allowing ample time to enjoy the exhibits. After visiting the museum, you could spend the remaining 2 hours exploring the nearby historical sites or enjoying a meal at a local restaurant specializing in Hyderabadi cuisine. \n\nLet me find out if there are any special exhibitions happening at the Salar Jung Museum right now.",
@@ -6525,10 +7663,31 @@
       ],
       "original_goal": "First time in Hyderabad! Want to start with the locals' favorites, not the tourist checklist.",
       "goal_category": "ambiguous",
-      "expected_services": [
-        "restaurant_finder",
-        "crowd_monitor",
-        "travel_options"
+      "expected_services_with_params": [
+        {
+          "restaurant_finder": {
+            "cuisine_type": [
+              "hyderabadi",
+              "street food"
+            ]
+          }
+        },
+        {
+          "crowd_monitor": {
+            "location_name": [
+              "charminar",
+              "laad bazaar"
+            ]
+          }
+        },
+        {
+          "travel_options": {
+            "preferred_mode": [
+              "auto_rickshaw",
+              "private_transport"
+            ]
+          }
+        }
       ],
       "core_services": "restaurant_finder:  \n- cuisine_type: [hyderabadi, south indian]  \n- dietary_restrictions: [vegetarian]  \n\ncrowd_monitor:  \n- location_name: [charminar, laad bazaar]",
       "final_summary": "Based on our discussion, your plan includes visiting the iconic Charminar and exploring the vibrant Laad Bazaar, where you can shop for traditional bangles and handicrafts. You can start your day at Charminar around 10:00 AM for about 1 hour, taking in the stunning architecture and local atmosphere. After that, you can spend approximately 1 hour at Laad Bazaar, enjoying the local shopping experience.\n\nFor lunch, I recommend trying some authentic Hyderabadi cuisine at a nearby restaurant, which should take around 1 hour. You can opt for a restaurant that serves local favorites like Biryani or Haleem.\n\nThis itinerary allows you to immerse yourself in the local culture while keeping your visit within a 4-hour timeframe. Enjoy your time in Hyderabad!",
@@ -6613,9 +7772,21 @@
       ],
       "original_goal": "I'd love to visit Charminar and understand its history. Wonder if it gets too crowded on weekends?",
       "goal_category": "concrete",
-      "expected_services": [
-        "historical_info",
-        "crowd_monitor"
+      "expected_services_with_params": [
+        {
+          "historical_info": {
+            "site_name": [
+              "charminar"
+            ]
+          }
+        },
+        {
+          "crowd_monitor": {
+            "location_name": [
+              "charminar"
+            ]
+          }
+        }
       ],
       "core_services": "crowd_monitor:  \n- location_name: [charminar, laad bazaar]  \n\nhistorical_info:  \n- site_name: [charminar]",
       "final_summary": "Based on our discussion, your plan includes visiting the Charminar to learn about its historical significance. To understand its history, you can allocate around 1 hour for the visit. Additionally, we can check the crowd levels at Charminar, especially since you are interested in how crowded it gets on weekends, which can help you plan your visit accordingly. If it is too crowded, you may consider visiting the nearby Laad Bazaar for some shopping or exploring local street food options. Overall, you can spend a total of about 2-3 hours at these locations, keeping within your 5-hour limit.",
@@ -6700,9 +7871,21 @@
       ],
       "original_goal": "The Qutub Shahi Tombs look beautiful in photos. How can I plan a visit there?",
       "goal_category": "concrete",
-      "expected_services": [
-        "historical_info",
-        "crowd_monitor"
+      "expected_services_with_params": [
+        {
+          "historical_info": {
+            "site_name": [
+              "qutub shahi tombs"
+            ]
+          }
+        },
+        {
+          "crowd_monitor": {
+            "location_name": [
+              "golconda fort"
+            ]
+          }
+        }
       ],
       "core_services": "travel_options:  \n- preferred_mode: [public_transport, cab]  \n\nhistorical_info:  \n- site_name: [qutub shahi tombs]  \n\nrestaurant_finder:  \n- cuisine_type: [hyderabadi]  \n- dietary_restrictions: [non_veg, vegetarian]",
       "final_summary": "Based on our discussion, your plan includes a visit to the Qutub Shahi Tombs. Here’s a proposed itinerary for a 5-hour visit:\n\n1. **Travel to Qutub Shahi Tombs**: Use public transport or a cab to reach the site, which should take approximately 30 minutes from central Hyderabad, depending on traffic.\n\n2. **Explore Qutub Shahi Tombs**: Allocate around 2 hours to walk through the beautiful tombs, take photos, and appreciate the architecture and historical significance of the site.\n\n3. **Visit a Nearby Restaurant**: After your tour, you can head to a nearby restaurant for lunch. A recommended cuisine is Hyderabadi, where you can savor local delicacies for about 1 hour.\n\n4. **Return Travel**: Allow 30 minutes for your return journey to your starting point.\n\nThis plan keeps you engaged with the historical charm of the Qutub Shahi Tombs while also enjoying some local cuisine within your time constraints.",
@@ -6787,9 +7970,23 @@
       ],
       "original_goal": "Are there any cultural exhibitions happening in the city? Particularly interested in traditional art.",
       "goal_category": "concrete",
-      "expected_services": [
-        "exhibition_tracker",
-        "ticket_purchase"
+      "expected_services_with_params": [
+        {
+          "exhibition_tracker": {
+            "exhibition_type": [
+              "art",
+              "cultural",
+              "traditional"
+            ]
+          }
+        },
+        {
+          "ticket_purchase": {
+            "ticket_type": [
+              "museum"
+            ]
+          }
+        }
       ],
       "core_services": "exhibition_tracker:  \n- exhibition_type: [cultural, traditional]  \n\nhistorical_info:  \n- site_name: [salar jung museum, qutub shahi tombs]  \n\ncrowd_monitor:  \n- location_name: [salar jung museum, qutub shahi tombs]",
       "final_summary": "Based on our discussion, your plan includes visiting a cultural exhibition focusing on traditional art. You can start your visit at the Salar Jung Museum, which often hosts exhibitions showcasing traditional art and historical artifacts. Plan to spend about 2 hours here from 10:00 AM to 12:00 PM. After that, you can visit the Qutub Shahi Tombs, where you can explore the beautiful architecture and learn about the cultural history of the region. Allocate around 1.5 hours for this visit from 12:30 PM to 2:00 PM. This plan keeps you engaged with cultural experiences within a 4-hour timeframe.",
@@ -6874,10 +8071,34 @@
       ],
       "original_goal": "Been reading about Hyderabad's royal history. Would love to see some of that grandeur and taste what the Nizams enjoyed!",
       "goal_category": "ambiguous",
-      "expected_services": [
-        "historical_info",
-        "restaurant_finder",
-        "crowd_monitor"
+      "expected_services_with_params": [
+        {
+          "historical_info": {
+            "site_name": [
+              "charminar",
+              "golconda fort"
+            ]
+          }
+        },
+        {
+          "restaurant_finder": {
+            "cuisine_type": [
+              "hyderabadi",
+              "mughlai"
+            ],
+            "dietary_restrictions": [
+              "non_veg"
+            ]
+          }
+        },
+        {
+          "crowd_monitor": {
+            "location_name": [
+              "charminar",
+              "golconda fort"
+            ]
+          }
+        }
       ],
       "core_services": "restaurant_finder:  \n- cuisine_type: [hyderabadi]  \n- dietary_restrictions: [non_veg]  \n\ncrowd_monitor:  \n- location_name: [golconda fort, salar jung museum]  \n\nhistorical_info:  \n- site_name: [golconda fort, salar jung museum]",
       "final_summary": "Based on our discussion, your plan includes visiting the **Golconda Fort** from 10:00 AM to 11:30 AM, where you can explore the rich history and grand architecture of the fort, reflecting the royal legacy of Hyderabad. Following that, from 11:30 AM to 12:30 PM, you'll enjoy a traditional **Hyderabadi lunch** at a renowned restaurant that serves dishes favored by the Nizams, allowing you to savor the flavors of royal cuisine. After lunch, from 12:30 PM to 1:00 PM, you can take a brief visit to the **Salar Jung Museum** to admire its vast collection of art and artifacts, further immersing yourself in the cultural history of Hyderabad. This itinerary keeps you engaged with the royal history while enjoying the culinary delights of the city within a 3-hour timeframe.",
@@ -6962,9 +8183,14 @@
       ],
       "original_goal": "Thinking of visiting Snow World. Is it usually very crowded?",
       "goal_category": "concrete",
-      "expected_services": [
-        "ticket_purchase",
-        "crowd_monitor"
+      "expected_services_with_params": [
+        {
+          "ticket_purchase": {
+            "ticket_type": [
+              "theme_park"
+            ]
+          }
+        }
       ],
       "core_services": "crowd_monitor:  \n- location_name: [inorbit mall, snow world]  \n\nticket_purchase:  \n- ticket_type: [snow world]",
       "final_summary": "Based on our discussion, your plan includes visiting Snow World for an exciting experience. To ensure a smooth visit, we will first check the crowd levels at Snow World. After assessing the crowd situation, you can purchase your tickets for entry. \n\nAssuming the crowd levels are manageable, you can spend approximately 2 hours enjoying the various attractions at Snow World. This leaves you with about 30 minutes for ticket purchasing and any necessary preparations before your visit. \n\nMake sure to keep the timings in mind to have a delightful experience!",
@@ -7049,10 +8275,35 @@
       ],
       "original_goal": "My grandparents always talk about Hyderabad's old charm. Want to experience that authentic vibe and maybe try some traditional snacks.",
       "goal_category": "ambiguous",
-      "expected_services": [
-        "historical_info",
-        "crowd_monitor",
-        "restaurant_finder"
+      "expected_services_with_params": [
+        {
+          "historical_info": {
+            "site_name": [
+              "charminar",
+              "mecca masjid"
+            ]
+          }
+        },
+        {
+          "crowd_monitor": {
+            "location_name": [
+              "charminar",
+              "laad bazaar"
+            ]
+          }
+        },
+        {
+          "restaurant_finder": {
+            "cuisine_type": [
+              "hyderabadi",
+              "irani"
+            ],
+            "dietary_restrictions": [
+              "vegetarian",
+              "non_veg"
+            ]
+          }
+        }
       ],
       "core_services": "restaurant_finder:  \n- cuisine_type: [hyderabadi, street food]  \n- dietary_restrictions: [vegetarian]  \n\ncrowd_monitor:  \n- location_name: [charminar, laad bazaar]  \n\nhistorical_info:  \n- site_name: [charminar]",
       "final_summary": "Based on our discussion, your plan includes visiting the iconic **Charminar** to soak in the historical charm of Hyderabad. You can spend about 1 hour exploring this magnificent structure and its surroundings. Afterward, you can head to **Laad Bazaar**, which is nearby, to experience the vibrant market atmosphere and do some shopping for traditional bangles and handicrafts. Plan to spend around 1 hour here.\n\nFinally, to satisfy your craving for traditional snacks, you can stop at a local eatery in the area for about 1 hour where you can enjoy some authentic **Hyderabadi street food**. This plan allows you to immerse yourself in the old-world charm of Hyderabad while also indulging in delicious local cuisine, all within a comfortable timeframe of 3 hours.",
@@ -7137,8 +8388,17 @@
       ],
       "original_goal": "Looking for a good place serving traditional Irani chai and Osmania biscuits!",
       "goal_category": "concrete",
-      "expected_services": [
-        "restaurant_finder"
+      "expected_services_with_params": [
+        {
+          "restaurant_finder": {
+            "cuisine_type": [
+              "irani"
+            ],
+            "dietary_restrictions": [
+              "vegetarian"
+            ]
+          }
+        }
       ],
       "core_services": "restaurant_finder:  \n- cuisine_type: [irani]  \n- dietary_restrictions: []  \n  \ncrowd_monitor:  \n- location_name: [charminar, laad bazaar]  \n  \ntravel_options:  \n- preferred_mode: [public_transport, auto_rickshaw]",
       "final_summary": "Based on our discussion, your plan includes visiting an Irani café in Hyderabad to enjoy traditional Irani chai and Osmania biscuits. You can start your experience at around 4:00 PM, ensuring you have enough time to relax and savor the flavors. \n\nTo enhance your visit, I recommend checking out the crowd levels at popular cafés beforehand to choose the best spot. You can use public transport or an auto-rickshaw to reach your destination efficiently. Enjoy your time in Hyderabad!",
@@ -7223,9 +8483,21 @@
       ],
       "original_goal": "I'm thinking of spending some time near Hussain Sagar Lake. How clean is the water there?",
       "goal_category": "concrete",
-      "expected_services": [
-        "water_quality",
-        "air_quality"
+      "expected_services_with_params": [
+        {
+          "water_quality": {
+            "water_body_name": [
+              "hussain sagar"
+            ]
+          }
+        },
+        {
+          "air_quality": {
+            "locations": [
+              "hyderabad"
+            ]
+          }
+        }
       ],
       "core_services": "water_quality:  \n- water_body_name: [hussain sagar]  \n\nrestaurant_finder:  \n- cuisine_type: [hyderabadi]  \n- dietary_restrictions: [vegetarian]",
       "final_summary": "Based on our discussion, your plan includes spending some time near Hussain Sagar Lake. I will check the water quality there to ensure it meets your expectations for cleanliness. \n\nAfter exploring the lake, you can enjoy a meal at a nearby restaurant. I recommend trying some local Hyderabadi cuisine, as it's a significant aspect of the city's culture. \n\nHere’s a suggested timeline for your 4-hour visit:\n- 0:00 - 1:00: Visit Hussain Sagar Lake and enjoy the scenery.\n- 1:00 - 1:30: Check the water quality of Hussain Sagar Lake.\n- 1:30 - 3:00: Enjoy lunch at a nearby restaurant featuring Hyderabadi cuisine.\n- 3:00 - 4:00: Stroll around the lake or visit nearby attractions if time permits.\n\nThis plan ensures a focused and enjoyable experience around Hussain Sagar Lake.",
@@ -7310,10 +8582,31 @@
       ],
       "original_goal": "First time in Hyderabad! Want to start with the locals' favorites, not the tourist checklist.",
       "goal_category": "ambiguous",
-      "expected_services": [
-        "restaurant_finder",
-        "crowd_monitor",
-        "travel_options"
+      "expected_services_with_params": [
+        {
+          "restaurant_finder": {
+            "cuisine_type": [
+              "hyderabadi",
+              "street food"
+            ]
+          }
+        },
+        {
+          "crowd_monitor": {
+            "location_name": [
+              "charminar",
+              "laad bazaar"
+            ]
+          }
+        },
+        {
+          "travel_options": {
+            "preferred_mode": [
+              "auto_rickshaw",
+              "private_transport"
+            ]
+          }
+        }
       ],
       "core_services": "restaurant_finder:  \n- cuisine_type: [hyderabadi]  \n- dietary_restrictions: [non_veg]  \n\ncrowd_monitor:  \n- location_name: [charminar, laad bazaar]  \n\nhistorical_info:  \n- site_name: [charminar]",
       "final_summary": "Based on our discussion, your plan includes visiting the iconic Charminar, where you can explore the historical significance and enjoy the vibrant atmosphere. Allocate about 1 hour for this visit, starting at 10:00 AM. \n\nAfterward, you can head to Laad Bazaar, which is nearby, known for its exquisite bangles and local handicrafts. Spend around 1 hour here from 11:00 AM to 12:00 PM, immersing yourself in the local shopping experience.\n\nTo wrap up your 4-hour plan, enjoy a delicious lunch at a nearby restaurant that specializes in Hyderabadi cuisine. You can take approximately 1 hour for your meal, from 12:00 PM to 1:00 PM, savoring authentic dishes like Biryani or Haleem, which are local favorites.\n\nThis plan gives you a great taste of local culture and cuisine while ensuring you stay within your 4-hour timeframe.",
@@ -7398,9 +8691,22 @@
       ],
       "original_goal": "Planning to visit GVK One for some shopping. Is it usually very crowded on weekdays?",
       "goal_category": "concrete",
-      "expected_services": [
-        "crowd_monitor",
-        "travel_options"
+      "expected_services_with_params": [
+        {
+          "crowd_monitor": {
+            "location_name": [
+              "gvk one"
+            ]
+          }
+        },
+        {
+          "travel_options": {
+            "preferred_mode": [
+              "metro",
+              "cab"
+            ]
+          }
+        }
       ],
       "core_services": "crowd_monitor:  \n- location_name: [gvk one]  \n\nrestaurant_finder:  \n- cuisine_type: [hyderabadi, south indian]  \n- dietary_restrictions: [vegetarian]",
       "final_summary": "Based on our discussion, your plan includes visiting GVK One for some shopping. Since you are concerned about crowd levels, I will check the current crowd situation at GVK One. Additionally, if you would like to grab a bite to eat after shopping, I can help you find a suitable restaurant nearby based on your cuisine preference. \n\nPlease hold on while I check the crowd levels at GVK One for you.",
@@ -7485,10 +8791,37 @@
       ],
       "original_goal": "The Golconda Fort sounds fascinating! I'd like to explore it thoroughly. What's the best way to get there?",
       "goal_category": "concrete",
-      "expected_services": [
-        "historical_info",
-        "crowd_monitor",
-        "ticket_purchase"
+      "expected_services_with_params": [
+        {
+          "historical_info": {
+            "site_name": [
+              "golconda fort"
+            ]
+          }
+        },
+        {
+          "crowd_monitor": {
+            "location_name": [
+              "golconda fort"
+            ]
+          }
+        },
+        {
+          "ticket_purchase": {
+            "ticket_type": [
+              "monument"
+            ]
+          }
+        },
+        {
+          "travel_options": {
+            "preferred_mode": [
+              "private_transport",
+              "auto_rickshaw",
+              "cab"
+            ]
+          }
+        }
       ],
       "core_services": "travel_options:  \n- preferred_mode: [private_transport]  \n\ncrowd_monitor:  \n- location_name: [golconda fort]  \n\nhistorical_info:  \n- site_name: [golconda fort]",
       "final_summary": "Based on our discussion, your plan includes exploring the Golconda Fort thoroughly. To get there, I recommend taking a private transport option, as it will provide you with flexibility and comfort. \n\nYou can start your visit at around 10:00 AM, allowing for approximately 2 hours to explore the fort's intricate architecture and historical significance. After your exploration, you could spend around 30 minutes taking in the views and capturing photos.\n\nTo ensure a pleasant experience, I will also check the current crowd levels at Golconda Fort, which will help you plan your visit better. Overall, this plan fits well within your 3-hour timeframe and focuses on the captivating history of the Golconda Fort.",
@@ -7573,9 +8906,23 @@
       ],
       "original_goal": "Are there any cultural exhibitions happening in the city? Particularly interested in traditional art.",
       "goal_category": "concrete",
-      "expected_services": [
-        "exhibition_tracker",
-        "ticket_purchase"
+      "expected_services_with_params": [
+        {
+          "exhibition_tracker": {
+            "exhibition_type": [
+              "art",
+              "cultural",
+              "traditional"
+            ]
+          }
+        },
+        {
+          "ticket_purchase": {
+            "ticket_type": [
+              "museum"
+            ]
+          }
+        }
       ],
       "core_services": "exhibition_tracker:  \n- exhibition_type: [traditional]  \n\ncrowd_monitor:  \n- location_name: [charminar, laad bazaar]",
       "final_summary": "Based on our discussion, your plan includes visiting a cultural exhibition focused on traditional art. You can spend approximately 1 hour at the exhibition, which will give you a chance to immerse yourself in the local culture. After the exhibition, you can take a 30-minute walk around the nearby area to soak in the atmosphere and perhaps discover more art or local crafts. This will keep you well within your 2-hour time frame.",
@@ -7660,8 +9007,17 @@
       ],
       "original_goal": "Craving some authentic Hyderabadi biryani! Any vegetarian-friendly places you'd recommend?",
       "goal_category": "concrete",
-      "expected_services": [
-        "restaurant_finder"
+      "expected_services_with_params": [
+        {
+          "restaurant_finder": {
+            "cuisine_type": [
+              "hyderabadi"
+            ],
+            "dietary_restrictions": [
+              "vegetarian"
+            ]
+          }
+        }
       ],
       "core_services": "restaurant_finder:  \n- cuisine_type: [hyderabadi]  \n- dietary_restrictions: [vegetarian]  \n\ncrowd_monitor:  \n- location_name: [hussain sagar, birla mandir]",
       "final_summary": "Based on our discussion, your plan includes visiting a couple of vegetarian-friendly restaurants to enjoy some authentic Hyderabadi biryani. You could start your culinary journey around 12:00 PM with a visit to the famous \"Paradise Biryani\" located in Banjara Hills, known for its delicious vegetarian biryani. After enjoying your meal, you can take a brief walk around the area to explore local shops and culture. \n\nFollowing that, around 2:00 PM, you can head to \"Biryani House\" in the Hussain Sagar area, which also offers great vegetarian options. You can enjoy the ambiance and perhaps take a stroll near the lake afterward. \n\nThis plan should comfortably fit within your 5-hour timeframe while allowing you to savor the authentic flavors of Hyderabadi biryani!",
@@ -7746,10 +9102,31 @@
       ],
       "original_goal": "First time in Hyderabad! Want to start with the locals' favorites, not the tourist checklist.",
       "goal_category": "ambiguous",
-      "expected_services": [
-        "restaurant_finder",
-        "crowd_monitor",
-        "travel_options"
+      "expected_services_with_params": [
+        {
+          "restaurant_finder": {
+            "cuisine_type": [
+              "hyderabadi",
+              "street food"
+            ]
+          }
+        },
+        {
+          "crowd_monitor": {
+            "location_name": [
+              "charminar",
+              "laad bazaar"
+            ]
+          }
+        },
+        {
+          "travel_options": {
+            "preferred_mode": [
+              "auto_rickshaw",
+              "private_transport"
+            ]
+          }
+        }
       ],
       "core_services": "restaurant_finder:  \n- cuisine_type: [hyderabadi, irani]  \n- dietary_restrictions: []  \n\ncrowd_monitor:  \n- location_name: [charminar, laad bazaar]  \n\ntravel_options:  \n- preferred_mode: [walk]",
       "final_summary": "Based on our discussion, your plan includes visiting the iconic Charminar, where you can soak in the local culture and history for about 1 hour. After that, enjoy a delightful meal at a nearby Irani café, known for its Hyderabadi cuisine, which should take around 1 hour. Finally, you can take a leisurely 1-hour stroll through Laad Bazaar, famous for its traditional bangles and vibrant local atmosphere. This plan fits well within your 3-hour timeframe and focuses on the locals' favorites in Hyderabad.",
@@ -7834,10 +9211,33 @@
       ],
       "original_goal": "I keep seeing these gorgeous lake photos on Instagram. Would love to spend an evening there and grab dinner nearby!",
       "goal_category": "ambiguous",
-      "expected_services": [
-        "water_quality",
-        "crowd_monitor",
-        "restaurant_finder"
+      "expected_services_with_params": [
+        {
+          "water_quality": {
+            "water_body_name": [
+              "hussain sagar"
+            ]
+          }
+        },
+        {
+          "crowd_monitor": {
+            "location_name": [
+              "tank bund"
+            ]
+          }
+        },
+        {
+          "restaurant_finder": {
+            "cuisine_type": [
+              "continental",
+              "north indian"
+            ],
+            "dietary_restrictions": [
+              "vegetarian",
+              "non_veg"
+            ]
+          }
+        }
       ],
       "core_services": "restaurant_finder:\n- cuisine_type: [hyderabadi]\n- dietary_restrictions: [non_veg]\n\ncrowd_monitor:\n- location_name: [hussain sagar, tank bund]",
       "final_summary": "Based on our discussion, your plan includes visiting Hussain Sagar Lake to enjoy the picturesque views, followed by dinner at a nearby restaurant specializing in Hyderabadi cuisine. You can spend approximately 1 hour at the lake from 5:00 PM to 6:00 PM, taking in the beautiful scenery and capturing some Instagram-worthy photos. After that, you can head to a restaurant like Paradise or Bawarchi, which are renowned for their delicious biryani, and plan to dine from 6:15 PM to 7:15 PM. This schedule allows you to enjoy a relaxing evening by the lake while savoring a memorable meal nearby.",
@@ -7922,9 +9322,14 @@
       ],
       "original_goal": "Thinking of visiting Snow World. Is it usually very crowded?",
       "goal_category": "concrete",
-      "expected_services": [
-        "ticket_purchase",
-        "crowd_monitor"
+      "expected_services_with_params": [
+        {
+          "ticket_purchase": {
+            "ticket_type": [
+              "theme_park"
+            ]
+          }
+        }
       ],
       "core_services": "crowd_monitor:  \n- location_name: [inorbit mall, gvk one]  \n\nticket_purchase:  \n- ticket_type: [snow world]",
       "final_summary": "Based on our discussion, your plan includes visiting Snow World. To ensure a smooth visit, I will check the current crowd levels at Snow World for you. If it's not too crowded, you can plan to spend around 2-3 hours enjoying the attractions there. Additionally, I can assist you with purchasing tickets for Snow World to save you time and avoid long lines. Please hold on while I gather the crowd information.",
@@ -8009,9 +9414,22 @@
       ],
       "original_goal": "I want to explore Laad Bazaar for traditional bangles. What's the best way to reach there?",
       "goal_category": "concrete",
-      "expected_services": [
-        "crowd_monitor",
-        "travel_options"
+      "expected_services_with_params": [
+        {
+          "crowd_monitor": {
+            "location_name": [
+              "laad bazaar"
+            ]
+          }
+        },
+        {
+          "travel_options": {
+            "preferred_mode": [
+              "auto_rickshaw",
+              "cab"
+            ]
+          }
+        }
       ],
       "core_services": "travel_options:  \n- preferred_mode: [cab]  \n\ncrowd_monitor:  \n- location_name: [laad bazaar, charminar]",
       "final_summary": "Based on our discussion, your plan includes visiting Laad Bazaar to explore traditional bangles. To reach Laad Bazaar, I recommend taking a cab, which should take approximately 30 minutes from the city center, depending on traffic conditions. \n\nYou can allocate around 1.5 hours to shop and explore the vibrant market. Afterward, you can visit the nearby historical site, Charminar, which is just a short walk away and will take about 30 minutes to explore. \n\nThis itinerary keeps you within your 4-hour time constraint, allowing you to enjoy the local culture and craftsmanship effectively.",
@@ -8096,10 +9514,33 @@
       ],
       "original_goal": "I keep seeing these gorgeous lake photos on Instagram. Would love to spend an evening there and grab dinner nearby!",
       "goal_category": "ambiguous",
-      "expected_services": [
-        "water_quality",
-        "crowd_monitor",
-        "restaurant_finder"
+      "expected_services_with_params": [
+        {
+          "water_quality": {
+            "water_body_name": [
+              "hussain sagar"
+            ]
+          }
+        },
+        {
+          "crowd_monitor": {
+            "location_name": [
+              "tank bund"
+            ]
+          }
+        },
+        {
+          "restaurant_finder": {
+            "cuisine_type": [
+              "continental",
+              "north indian"
+            ],
+            "dietary_restrictions": [
+              "vegetarian",
+              "non_veg"
+            ]
+          }
+        }
       ],
       "core_services": "restaurant_finder:  \n- cuisine_type: [hyderabadi, south indian]  \n- dietary_restrictions: [vegetarian, non_veg]  \n\ncrowd_monitor:  \n- location_name: [hussain sagar, tank bund]  \n\nwater_quality:  \n- water_body_name: [hussain sagar]",
       "final_summary": "Based on our discussion, your plan includes visiting Hussain Sagar Lake for a scenic evening by the water, where you can enjoy the picturesque views and take some stunning photos. You can allocate about 1.5 hours for this visit from 5:00 PM to 6:30 PM. \n\nAfter your time at the lake, I recommend heading to a nearby restaurant to enjoy dinner. You can try a local Hyderabadi restaurant known for its authentic cuisine. This will give you approximately 1.5 hours for dinner from 6:30 PM to 8:00 PM. \n\nThis plan keeps you well within a 3-hour timeframe while ensuring you experience the beauty of the lake and enjoy a delightful meal nearby.",
@@ -8184,9 +9625,22 @@
       ],
       "original_goal": "Would love to see some local handicraft exhibitions. Anything interesting coming up?",
       "goal_category": "concrete",
-      "expected_services": [
-        "exhibition_tracker",
-        "ticket_purchase"
+      "expected_services_with_params": [
+        {
+          "exhibition_tracker": {
+            "exhibition_type": [
+              "handicrafts",
+              "traditional"
+            ]
+          }
+        },
+        {
+          "ticket_purchase": {
+            "ticket_type": [
+              "museum"
+            ]
+          }
+        }
       ],
       "core_services": "exhibition_tracker:  \n- exhibition_type: [handicrafts]  \n\nrestaurant_finder:  \n- cuisine_type: [hyderabadi]  \n- dietary_restrictions: [vegetarian]  \n\ncrowd_monitor:  \n- location_name: [laad bazaar]",
       "final_summary": "Based on our discussion, your plan includes visiting a local handicraft exhibition for approximately 2 hours. After exploring the exhibition, you can enjoy a meal at a nearby restaurant that specializes in Hyderabadi cuisine for around 1 hour. This will give you a total of 3 hours, leaving you with an hour to spare for travel or additional exploration nearby. Enjoy your visit!",
@@ -8271,9 +9725,14 @@
       ],
       "original_goal": "Thinking of visiting Snow World. Is it usually very crowded?",
       "goal_category": "concrete",
-      "expected_services": [
-        "ticket_purchase",
-        "crowd_monitor"
+      "expected_services_with_params": [
+        {
+          "ticket_purchase": {
+            "ticket_type": [
+              "theme_park"
+            ]
+          }
+        }
       ],
       "core_services": "crowd_monitor:  \n- location_name: [inorbit mall, gvk one]  \n\nticket_purchase:  \n- ticket_type: [snow world]",
       "final_summary": "Based on our discussion, your plan includes a visit to Snow World. Before heading there, it would be helpful to check the current crowd levels at Snow World to ensure a comfortable experience. If you decide to go, it's advisable to allocate around 2-3 hours for the visit, which includes time for activities and some waiting if it gets crowded. You might also want to purchase tickets in advance to avoid any delays. Therefore, considering the time to monitor crowd levels and purchase tickets, your total plan should fit within the 5-hour time frame, allowing for a pleasant outing.",
@@ -8358,9 +9817,25 @@
       ],
       "original_goal": "Would love to try some street food. Any areas famous for chaat and local snacks?",
       "goal_category": "concrete",
-      "expected_services": [
-        "restaurant_finder",
-        "crowd_monitor"
+      "expected_services_with_params": [
+        {
+          "restaurant_finder": {
+            "cuisine_type": [
+              "street food"
+            ],
+            "dietary_restrictions": [
+              "vegetarian"
+            ]
+          }
+        },
+        {
+          "crowd_monitor": {
+            "location_name": [
+              "charminar",
+              "laad bazaar"
+            ]
+          }
+        }
       ],
       "core_services": "restaurant_finder:  \n- cuisine_type: [street food]  \n- dietary_restrictions: []  \n\ncrowd_monitor:  \n- location_name: [laad bazaar, hussain sagar]",
       "final_summary": "Based on our discussion, your plan includes visiting the famous Laad Bazaar for street food, where you can indulge in various chaat and local snacks. You can allocate around 1.5 hours to explore the vibrant market and taste different dishes. \n\nNext, I recommend heading to Hussain Sagar, which is nearby and known for its beautiful views and additional street food options. You can spend about 1 hour enjoying the lakeside atmosphere and sampling more local snacks.\n\nFinally, you can check the crowd levels at these locations before you arrive to ensure a pleasant experience. Overall, your plan should fit comfortably within a 4-hour timeframe. Enjoy your culinary adventure in Hyderabad!",
@@ -8445,9 +9920,21 @@
       ],
       "original_goal": "I'd love to visit Charminar and understand its history. Wonder if it gets too crowded on weekends?",
       "goal_category": "concrete",
-      "expected_services": [
-        "historical_info",
-        "crowd_monitor"
+      "expected_services_with_params": [
+        {
+          "historical_info": {
+            "site_name": [
+              "charminar"
+            ]
+          }
+        },
+        {
+          "crowd_monitor": {
+            "location_name": [
+              "charminar"
+            ]
+          }
+        }
       ],
       "core_services": "crowd_monitor:  \n- location_name: [charminar, laad bazaar]  \n\nhistorical_info:  \n- site_name: [charminar]  \n\ntravel_options:  \n- preferred_mode: [walk]",
       "final_summary": "Based on our discussion, your plan includes visiting Charminar to explore its rich history and cultural significance. To ensure a more enjoyable experience, I recommend checking the crowd levels at Charminar, especially since you mentioned interest in visiting on a weekend. You can plan to spend approximately 1 hour at Charminar. Additionally, I suggest taking a brief 30-minute walk around the surrounding area to soak in the vibrant atmosphere and local shops. This plan keeps you engaged and within the 2-hour timeframe you prefer.",
@@ -8532,9 +10019,25 @@
       ],
       "original_goal": "Would love to try some street food. Any areas famous for chaat and local snacks?",
       "goal_category": "concrete",
-      "expected_services": [
-        "restaurant_finder",
-        "crowd_monitor"
+      "expected_services_with_params": [
+        {
+          "restaurant_finder": {
+            "cuisine_type": [
+              "street food"
+            ],
+            "dietary_restrictions": [
+              "vegetarian"
+            ]
+          }
+        },
+        {
+          "crowd_monitor": {
+            "location_name": [
+              "charminar",
+              "laad bazaar"
+            ]
+          }
+        }
       ],
       "core_services": "restaurant_finder:  \n- cuisine_type: [street food]  \n- dietary_restrictions: [vegetarian]  \n\ncrowd_monitor:  \n- location_name: [laad bazaar, hussain sagar, tank bund]",
       "final_summary": "Based on our discussion, your plan includes visiting Laad Bazaar for some delicious street food, particularly known for its chaat and local snacks. You can spend about 1.5 hours there, enjoying various food stalls and experiencing the vibrant atmosphere. \n\nNext, you can head to the Hussain Sagar area, which is another great spot for street food. Spend around 1 hour here, sampling local delicacies while enjoying the view of the lake. \n\nFinally, you can wrap up your 4-hour plan by visiting the nearby Tank Bund for a scenic stroll and some more street food options. Allocate about 1 hour here to relax and take in the sights.\n\nThis itinerary keeps you engaged with local flavors while making the most of your time in Hyderabad.",
@@ -8619,9 +10122,21 @@
       ],
       "original_goal": "I'm thinking of spending some time near Hussain Sagar Lake. How clean is the water there?",
       "goal_category": "concrete",
-      "expected_services": [
-        "water_quality",
-        "air_quality"
+      "expected_services_with_params": [
+        {
+          "water_quality": {
+            "water_body_name": [
+              "hussain sagar"
+            ]
+          }
+        },
+        {
+          "air_quality": {
+            "locations": [
+              "hyderabad"
+            ]
+          }
+        }
       ],
       "core_services": "water_quality:  \n- water_body_name: [hussain sagar]  \n\ncrowd_monitor:  \n- location_name: [hussain sagar]  \n\ntravel_options:  \n- preferred_mode: [walk]",
       "final_summary": "Based on our discussion, your plan includes spending some time near Hussain Sagar Lake. The water quality there is currently being monitored for cleanliness. You can start your visit at 10:00 AM, taking a walk around the lake to enjoy the scenic views and the iconic Buddha statue in the center. After an hour of leisurely walking and taking photos, you can relax at a nearby café or restaurant for some refreshments at 11:00 AM, ensuring you keep your activities within the 2-hour timeframe.",
@@ -8706,10 +10221,33 @@
       ],
       "original_goal": "I keep seeing these gorgeous lake photos on Instagram. Would love to spend an evening there and grab dinner nearby!",
       "goal_category": "ambiguous",
-      "expected_services": [
-        "water_quality",
-        "crowd_monitor",
-        "restaurant_finder"
+      "expected_services_with_params": [
+        {
+          "water_quality": {
+            "water_body_name": [
+              "hussain sagar"
+            ]
+          }
+        },
+        {
+          "crowd_monitor": {
+            "location_name": [
+              "tank bund"
+            ]
+          }
+        },
+        {
+          "restaurant_finder": {
+            "cuisine_type": [
+              "continental",
+              "north indian"
+            ],
+            "dietary_restrictions": [
+              "vegetarian",
+              "non_veg"
+            ]
+          }
+        }
       ],
       "core_services": "restaurant_finder:  \n- cuisine_type: [hyderabadi]  \n- dietary_restrictions: []  \n\ncrowd_monitor:  \n- location_name: [hussain sagar]  \n\nwater_quality:  \n- water_body_name: [hussain sagar]",
       "final_summary": "Based on our discussion, your plan includes visiting Hussain Sagar Lake in the evening for picturesque views and a relaxing atmosphere, ideally around 5:30 PM to enjoy the sunset. After spending about an hour at the lake, you can head to a nearby restaurant for dinner around 6:30 PM. You could consider dining at a restaurant specializing in Hyderabadi cuisine to savor the local flavors. This plan keeps you engaged for about four hours, ensuring a delightful evening experience.",

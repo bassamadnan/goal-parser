@@ -1,3 +1,0 @@
-Simulation Index: 3
-Time taken: 12.54 seconds
-Error occurred: 'tuple' object has no attribute 'get'

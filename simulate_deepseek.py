@@ -21,11 +21,18 @@ if not OPEN_AI_MODEL:
     raise ValueError("Please set the OPEN_AI_MODEL environment variable.")
 
 # Set up the OpenAI model
-llm = LLM(
-    model="deepseek/deepseek-chat",
-    temperature=0.7
+# llm = LLM(
+#     model="deepseek/deepseek-chat",
+#     temperature=0.7
+# )
+
+llm = ChatOpenAI(
+    model='deepseek/deepseek-chat', 
+    openai_api_key=OPENAI_API_KEY, 
+    openai_api_base='https://api.deepseek.com',
 )
 
+print("Using model: ", llm.model_name) 
 # Load all required files
 MICROSERVICES_FILE = "services.txt"
 SUMMARY_FILE = "summary.txt"
